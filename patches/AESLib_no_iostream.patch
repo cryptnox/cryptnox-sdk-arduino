@@ -1,0 +1,63 @@
+# SPDX-License-Identifier: LGPL-3.0-or-later
+# Copyright (c) 2026 Cryptnox SA
+#
+# AESLib - skip <iostream>/<sstream>/<iomanip> on Renesas RA4M1
+#
+# AESLib.h unconditionally pulls in <iostream>, <sstream>, <iomanip> on
+# non-AVR/SAMD/NRF5 platforms for the debug-only intToHex() helper. On the
+# Renesas RA4M1 (Arduino UNO R4) this drags in the entire C++ iostream
+# machinery: locale, ios_base::Init static constructors, allocators,
+# exceptions, dtoa, strftime, ~145 KB of flash.
+#
+# The Cryptnox SDK never calls AESLib::intToHex (used only in AES_DEBUG
+# blocks that are commented out). Adding Renesas to the existing guard
+# completely strips this dead weight.
+#
+# Sentinel: ARDUINO_ARCH_RENESAS in the iostream guard
+
+--- a/src/AESLib.h
++++ b/src/AESLib.h
+@@ -6,7 +6,7 @@
+ #include "AES.h"
+ #include "xbase64.h"
+ 
+-#if !(defined(__AVR__) || defined(ARDUINO_ARCH_SAMD) || defined(NRF5))
++#if !(defined(__AVR__) || defined(ARDUINO_ARCH_SAMD) || defined(NRF5) || defined(ARDUINO_ARCH_RENESAS) || defined(ARDUINO_ARCH_RENESAS_UNO))
+ #include <iomanip> // provides std::setfill and setw:: (only for intToHex debugging)
+ #include <sstream>
+ #include <cstdint>
+@@ -62,11 +62,9 @@ class AESLib
+     uint8_t getrnd();
+ 
+ 
+-#ifndef __AVR__
+-#ifndef NRF5
++#if !(defined(__AVR__) || defined(NRF5) || defined(ARDUINO_ARCH_SAMD) || defined(ARDUINO_ARCH_RENESAS) || defined(ARDUINO_ARCH_RENESAS_UNO))
+     std::string intToHex(uint8_t intValue);
+ #endif
+-#endif
+ 
+   private:
+     void clean();
+--- a/src/AESLib.cpp
++++ b/src/AESLib.cpp
+@@ -2,9 +2,7 @@
+ 
+ //#define AES_DEBUG
+ 
+-#ifndef __AVR__
+-#ifndef NRF5
+-#ifndef ARDUINO_ARCH_SAMD
++#if !(defined(__AVR__) || defined(NRF5) || defined(ARDUINO_ARCH_SAMD) || defined(ARDUINO_ARCH_RENESAS) || defined(ARDUINO_ARCH_RENESAS_UNO))
+ std::string AESLib::intToHex(uint8_t intValue) {
+     std::string hexStr;
+     std::stringstream sstream;
+@@ -15,8 +13,6 @@
+     return hexStr;
+ }
+ #endif
+-#endif
+-#endif
+ //AESLib::AESLib(void){};
+ 
+ uint8_t AESLib::getrnd()

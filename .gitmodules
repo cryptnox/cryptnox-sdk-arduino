@@ -1,0 +1,3 @@
+[submodule "src/cryptnox-sdk-cpp"]
+	path = src/cryptnox-sdk-cpp
+	url = https://github.com/cryptnox/cryptnox-sdk-cpp.git

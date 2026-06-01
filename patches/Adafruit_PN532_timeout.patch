@@ -1,0 +1,29 @@
+# SPDX-License-Identifier: LGPL-3.0-or-later
+# Copyright (c) 2026 Cryptnox SA
+#
+# Adafruit_PN532 - extend inDataExchange timeouts for BIP32 derivation
+#
+# The default 1000 ms timeout in inDataExchange() is too short for a
+# Cryptnox card performing sign + BIP32 derivation (5-level path can take
+# 2-4 s). Raise both the sendCommandCheckAck and waitready calls to 10000 ms.
+
+--- a/Adafruit_PN532.cpp
++++ b/Adafruit_PN532.cpp
+@@ -680,15 +680,15 @@
+   for (i = 0; i < sendLength; ++i) {
+     pn532_packetbuffer[i + 2] = send[i];
+   }
+ 
+-  if (!sendCommandCheckAck(pn532_packetbuffer, sendLength + 2, 1000)) {
++  if (!sendCommandCheckAck(pn532_packetbuffer, sendLength + 2, 10000)) {
+ #ifdef PN532DEBUG
+     PN532DEBUGPRINT.println(F("Could not send APDU"));
+ #endif
+     return false;
+   }
+ 
+-  if (!waitready(1000)) {
++  if (!waitready(10000)) {
+ #ifdef PN532DEBUG
+     PN532DEBUGPRINT.println(F("Response never received for APDU..."));
+ #endif

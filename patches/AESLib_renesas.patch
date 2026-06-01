@@ -1,0 +1,32 @@
+# SPDX-License-Identifier: LGPL-3.0-or-later
+# Copyright (c) 2026 Cryptnox SA
+#
+# AESLib - add Renesas RA4M1 (Arduino UNO R4) pgmspace guard
+#
+# AES_config.h and xbase64.cpp unconditionally include <pgmspace.h> on
+# non-AVR/SAMD/NRF5 platforms, but the Renesas RA4M1 only provides the
+# header under <avr/pgmspace.h> (via the Arduino Renesas core compatibility
+# layer). Add ARDUINO_ARCH_RENESAS / ARDUINO_ARCH_RENESAS_UNO to the guard
+# so they fall into the <avr/pgmspace.h> branch.
+
+--- a/src/AES_config.h
++++ b/src/AES_config.h
+@@ -30,7 +30,7 @@
+   #define printf_P printf
+   #define PSTR(x) (x)
+ #else
+-  #if (defined(__AVR__) || defined(ARDUINO_ARCH_SAMD) || defined(NRF5))
++  #if (defined(__AVR__) || defined(ARDUINO_ARCH_SAMD) || defined(NRF5) || defined(ARDUINO_ARCH_RENESAS) || defined(ARDUINO_ARCH_RENESAS_UNO))
+     #include <avr/pgmspace.h>
+   #else
+   #if !defined(__x86_64)
+--- a/src/xbase64.cpp
++++ b/src/xbase64.cpp
+@@ -1,6 +1,6 @@
+ #include "xbase64.h"
+ 
+-#if (defined(__AVR__) || defined(NRF5) || defined(ARDUINO_ARCH_SAMD))
++#if (defined(__AVR__) || defined(NRF5) || defined(ARDUINO_ARCH_SAMD) || defined(ARDUINO_ARCH_RENESAS) || defined(ARDUINO_ARCH_RENESAS_UNO))
+ #include <avr/pgmspace.h>
+ #else
+ #if !defined(__x86_64)

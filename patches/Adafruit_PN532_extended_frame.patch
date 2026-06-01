@@ -1,0 +1,174 @@
+# SPDX-License-Identifier: LGPL-3.0-or-later
+# Copyright (c) 2026 Cryptnox SA
+#
+# Adafruit_PN532 - support PN532 extended frame format
+#
+# The stock Adafruit_PN532 inDataExchange only knows how to parse the
+# PN532 "normal" frame format (single-byte length field, max ~255-byte
+# payload). When the card answers with a payload larger than that, the
+# PN532 firmware emits an "extended" frame:
+#
+#   Normal:   00 00 FF LEN LCS  TFI cmd status DATA... DCS 00
+#   Extended: 00 00 FF FF  FF   LENHI LENLO  LCS  TFI cmd status DATA... DCS 00
+#
+# Adafruit sees LEN=0xFF and computes LCS = ~0xFF + 1 = 0x01, which never
+# matches the 0xFF in position [4], so it bails out with "Length check
+# invalid" and returns false. The Cryptnox SDK's GET_MANUFACTURER_CERTIFICATE
+# (INS=F7) returns up to ~411 bytes per page and reliably trips this path.
+#
+# This patch:
+#   1. Bumps PN532_PACKBUFFSIZ 64 -> 440 to fit the largest extended frame
+#      the PN532 emits over ISO-DEP (matches the esp32 PN532 driver's
+#      PN532_EXCHANGE_FRAME_MAX).
+#   2. Widens readdata's length parameter from uint8_t to uint16_t so the
+#      whole buffer can actually be filled - sizeof(pn532_packetbuffer)
+#      now exceeds 255 and would silently truncate via the implicit cast.
+diff --git a/Adafruit_PN532.cpp b/Adafruit_PN532.cpp
+index 154c920..2871242 100644
+--- a/Adafruit_PN532.cpp
++++ b/Adafruit_PN532.cpp
+@@ -75,7 +75,7 @@ byte pn532response_firmwarevers[] = {
+ #define PN532DEBUGPRINT Serial ///< Fixed name for debug Serial instance
+ // #define PN532DEBUGPRINT SerialUSB ///< Fixed name for debug Serial instance
+ 
+-#define PN532_PACKBUFFSIZ 64                ///< Packet buffer size in bytes
++#define PN532_PACKBUFFSIZ 440               ///< Packet buffer size in bytes
+ byte pn532_packetbuffer[PN532_PACKBUFFSIZ]; ///< Packet buffer used in various
+                                             ///< transactions
+ 
+@@ -740,6 +740,86 @@ bool Adafruit_PN532::inDataExchange(uint8_t *send, uint8_t sendLength,
+   }
+ }
+ 
++/**************************************************************************/
++/*!
++    @brief   APDU exchange that returns the response through a 16-bit length
++             out-param. Handles both the PN532 normal frame (1-byte LEN) and
++             the extended frame (0xFF 0xFF + 16-bit LEN), so responses
++             larger than ~255 bytes can be delivered intact - required by
++             cards whose GET_MANUFACTURER_CERTIFICATE answers exceed the
++             normal-frame ceiling.
++
++    @param   send            APDU bytes to send.
++    @param   sendLength      Length of the APDU command.
++    @param   response        Caller-allocated response buffer.
++    @param   responseLength  In: capacity of @p response.
++                             Out: actual number of bytes written.
++    @return  true on success, false on transport / frame parse / status
++             error.
++*/
++/**************************************************************************/
++bool Adafruit_PN532::inDataExchange16(uint8_t *send, uint8_t sendLength,
++                                      uint8_t *response,
++                                      uint16_t *responseLength) {
++  if (sendLength > PN532_PACKBUFFSIZ - 2) {
++    return false;
++  }
++
++  pn532_packetbuffer[0] = 0x40; // PN532_COMMAND_INDATAEXCHANGE;
++  pn532_packetbuffer[1] = _inListedTag;
++  for (uint8_t i = 0; i < sendLength; ++i) {
++    pn532_packetbuffer[i + 2] = send[i];
++  }
++
++  if (!sendCommandCheckAck(pn532_packetbuffer, sendLength + 2, 10000)) {
++    return false;
++  }
++  if (!waitready(10000)) {
++    return false;
++  }
++
++  readdata(pn532_packetbuffer, sizeof(pn532_packetbuffer));
++
++  if (!(pn532_packetbuffer[0] == 0 && pn532_packetbuffer[1] == 0 &&
++        pn532_packetbuffer[2] == 0xff)) {
++    return false;
++  }
++
++  bool isExtended = (pn532_packetbuffer[3] == 0xff &&
++                     pn532_packetbuffer[4] == 0xff);
++
++  uint16_t bodyLen;
++  uint16_t dataOff;
++  uint8_t  status;
++
++  if (isExtended) {
++    bodyLen = ((uint16_t)pn532_packetbuffer[5] << 8) |
++              (uint16_t)pn532_packetbuffer[6];
++    /* LCS at [7], TFI at [8], cmd at [9], status at [10] */
++    if (pn532_packetbuffer[8] != PN532_PN532TOHOST ||
++        pn532_packetbuffer[9] != PN532_RESPONSE_INDATAEXCHANGE) return false;
++    status  = pn532_packetbuffer[10];
++    dataOff = 11;
++  } else {
++    uint8_t len = pn532_packetbuffer[3];
++    if (pn532_packetbuffer[4] != (uint8_t)(~len + 1)) return false;
++    if (pn532_packetbuffer[5] != PN532_PN532TOHOST ||
++        pn532_packetbuffer[6] != PN532_RESPONSE_INDATAEXCHANGE) return false;
++    status  = pn532_packetbuffer[7];
++    dataOff = 8;
++    bodyLen = len;
++  }
++
++  if ((status & 0x3f) != 0) return false;
++  /* bodyLen counts TFI + cmd + status + data; subtract the 3-byte preamble. */
++  uint16_t dataLen = (bodyLen >= 3U) ? (uint16_t)(bodyLen - 3U) : 0U;
++
++  if (dataLen > *responseLength) dataLen = *responseLength; /* silent truncation */
++  for (uint16_t i = 0; i < dataLen; ++i) response[i] = pn532_packetbuffer[dataOff + i];
++  *responseLength = dataLen;
++  return true;
++}
++
+ /**************************************************************************/
+ /*!
+     @brief   'InLists' a passive target. PN532 acting as reader/initiator,
+@@ -1599,7 +1679,7 @@ bool Adafruit_PN532::waitready(uint16_t timeout) {
+     @param  n         Number of bytes to be read
+ */
+ /**************************************************************************/
+-void Adafruit_PN532::readdata(uint8_t *buff, uint8_t n) {
++void Adafruit_PN532::readdata(uint8_t *buff, uint16_t n) {
+   if (spi_dev) {
+     // SPI read
+     uint8_t cmd = PN532_SPI_DATAREAD;
+@@ -1608,7 +1688,7 @@ void Adafruit_PN532::readdata(uint8_t *buff, uint8_t n) {
+     // I2C read
+     uint8_t rbuff[n + 1]; // +1 for leading RDY byte
+     i2c_dev->read(rbuff, n + 1);
+-    for (uint8_t i = 0; i < n; i++) {
++    for (uint16_t i = 0; i < n; i++) {
+       buff[i] = rbuff[i + 1];
+     }
+   } else if (ser_dev) {
+@@ -1617,7 +1697,7 @@ void Adafruit_PN532::readdata(uint8_t *buff, uint8_t n) {
+   }
+ #ifdef PN532DEBUG
+   PN532DEBUGPRINT.print(F("Reading: "));
+-  for (uint8_t i = 0; i < n; i++) {
++  for (uint16_t i = 0; i < n; i++) {
+     PN532DEBUGPRINT.print(F(" 0x"));
+     PN532DEBUGPRINT.print(buff[i], HEX);
+   }
+diff --git a/Adafruit_PN532.h b/Adafruit_PN532.h
+index 744e7cf..aeb5660 100644
+--- a/Adafruit_PN532.h
++++ b/Adafruit_PN532.h
+@@ -168,6 +168,8 @@ public:
+   bool readDetectedPassiveTargetID(uint8_t *uid, uint8_t *uidLength);
+   bool inDataExchange(uint8_t *send, uint8_t sendLength, uint8_t *response,
+                       uint8_t *responseLength);
++  bool inDataExchange16(uint8_t *send, uint8_t sendLength, uint8_t *response,
++                        uint16_t *responseLength);
+   bool inListPassiveTarget();
+   uint8_t AsTarget();
+   uint8_t getDataTarget(uint8_t *cmd, uint8_t *cmdlen);
+@@ -207,7 +209,7 @@ private:
+   int8_t _inListedTag; // Tg number of inlisted tag.
+ 
+   // Low level communication functions that handle both SPI and I2C.
+-  void readdata(uint8_t *buff, uint8_t n);
++  void readdata(uint8_t *buff, uint16_t n);
+   void writecommand(uint8_t *cmd, uint8_t cmdlen);
+   bool isready();
+   bool waitready(uint16_t timeout);
