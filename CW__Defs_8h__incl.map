@@ -1,0 +1,16 @@
+<map id="src/cryptnox&#45;sdk&#45;cpp/CW_Defs.h" name="src/cryptnox&#45;sdk&#45;cpp/CW_Defs.h">
+<area shape="rect" id="Node000001" title="Shared constants, error codes, and session state for the SDK." alt="" coords="107,5,265,45"/>
+<area shape="rect" id="Node000002" href="$platform__compat_8h.html" title="Arduino compatibility shims for non&#45;Arduino (plain C++) builds." alt="" coords="113,167,259,192"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="182,46,174,80,173,118,180,153,175,154,167,119,169,79,177,45"/>
+<area shape="rect" id="Node000007" href="$CW__Utils_8h.html" title="Platform&#45;independent security and memory utilities." alt="" coords="182,93,275,119"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="199,44,218,80,214,83,194,47"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="5,240,76,265"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="164,194,78,236,75,232,161,190"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="101,240,175,265"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="180,194,156,230,151,227,176,191"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="200,240,271,265"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="196,191,222,227,217,230,192,194"/>
+<area shape="rect" id="Node000006" title=" " alt="" coords="295,240,378,265"/>
+<area shape="poly" id="edge5_Node000002_Node000006" title=" " alt="" coords="211,190,301,232,298,236,209,194"/>
+<area shape="poly" id="edge7_Node000007_Node000002" title=" " alt="" coords="224,120,202,156,198,154,219,118"/>
+</map>

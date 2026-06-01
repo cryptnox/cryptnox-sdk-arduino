@@ -1,0 +1,25 @@
+var classArduinoLoggerAdapter =
+[
+    [ "ArduinoLoggerAdapter", "classArduinoLoggerAdapter.html#a7d77165a66ad46ef1e7a8317b8659e6e", null ],
+    [ "ArduinoLoggerAdapter", "classArduinoLoggerAdapter.html#a5f543aaae5a9f33c3d6ff57ae5d18ca1", null ],
+    [ "~ArduinoLoggerAdapter", "classArduinoLoggerAdapter.html#ad904881bd7ba0d80d87979f6357e11b9", null ],
+    [ "ArduinoLoggerAdapter", "classArduinoLoggerAdapter.html#ac3108d78896d6c6afa0c1cec82211467", null ],
+    [ "begin", "classArduinoLoggerAdapter.html#aed4aae70895d704ccaecae5188a17d36", null ],
+    [ "operator=", "classArduinoLoggerAdapter.html#aeea2ad3267d5219eb26a9e76ebdb6c06", null ],
+    [ "print", "classArduinoLoggerAdapter.html#a3b605a58514bbbfee670741f5686d32b", null ],
+    [ "print", "classArduinoLoggerAdapter.html#a525d8e38e0c4b339b382dda576b9e0a9", null ],
+    [ "print", "classArduinoLoggerAdapter.html#aa788277c473021b0c7b921e5db21a3e2", null ],
+    [ "print", "classArduinoLoggerAdapter.html#af36fcd4c8e69894f37982881ae170b04", null ],
+    [ "print", "classArduinoLoggerAdapter.html#a4115d5dbff89b74cfe10788da2a0d7a4", null ],
+    [ "print", "classArduinoLoggerAdapter.html#ac5b2ba45726b0105dcceb77411acdf13", null ],
+    [ "print", "classArduinoLoggerAdapter.html#ad2c1b55982f68f1b3dbc9c22b39ec58a", null ],
+    [ "println", "classArduinoLoggerAdapter.html#a9ad6458e149a5ef2ad288b6fd2cc9f26", null ],
+    [ "println", "classArduinoLoggerAdapter.html#ae8a562801d8f528278709e6124eb499c", null ],
+    [ "println", "classArduinoLoggerAdapter.html#a1173c609e475837131094ffe1f5f97a1", null ],
+    [ "println", "classArduinoLoggerAdapter.html#aacba526f89317d542823f41b28072a82", null ],
+    [ "println", "classArduinoLoggerAdapter.html#a8e1cb14c9eba2ba93a1e95c5273c0495", null ],
+    [ "println", "classArduinoLoggerAdapter.html#a2a8698f0873965e37315c76ba67120ff", null ],
+    [ "println", "classArduinoLoggerAdapter.html#a54cccbaa4d9f2740231b9606ca311008", null ],
+    [ "println", "classArduinoLoggerAdapter.html#a16a781488e6ef27e1c473f48e629bd0a", null ],
+    [ "_serial", "classArduinoLoggerAdapter.html#a427e22e28f41bc12b042902c0fc0e228", null ]
+];

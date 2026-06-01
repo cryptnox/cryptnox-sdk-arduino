@@ -1,0 +1,19 @@
+<map id="src/cryptnox&#45;sdk&#45;cpp/CW_CryptoProvider.h" name="src/cryptnox&#45;sdk&#45;cpp/CW_CryptoProvider.h">
+<area shape="rect" id="Node000001" title="Abstract cryptographic primitives interface." alt="" coords="95,5,258,45"/>
+<area shape="rect" id="Node000002" href="$platform__compat_8h.html" title="Arduino compatibility shims for non&#45;Arduino (plain C++) builds." alt="" coords="113,240,259,265"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="173,46,163,94,162,130,166,166,180,227,175,228,161,167,157,130,158,93,168,45"/>
+<area shape="rect" id="Node000007" href="$CW__Defs_8h.html" title="Shared constants, error codes, and session state for the SDK." alt="" coords="173,93,266,119"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="189,44,209,80,204,83,185,47"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="5,313,76,339"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="164,268,78,310,75,305,161,263"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="101,313,175,339"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="180,267,156,304,151,301,176,264"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="200,313,271,339"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="196,264,222,301,217,304,192,267"/>
+<area shape="rect" id="Node000006" title=" " alt="" coords="295,313,378,339"/>
+<area shape="poly" id="edge5_Node000002_Node000006" title=" " alt="" coords="211,263,301,305,298,310,209,268"/>
+<area shape="poly" id="edge7_Node000007_Node000002" title=" " alt="" coords="219,120,194,227,189,226,214,119"/>
+<area shape="rect" id="Node000008" href="$CW__Utils_8h.html" title="Platform&#45;independent security and memory utilities." alt="" coords="223,167,317,192"/>
+<area shape="poly" id="edge8_Node000007_Node000008" title=" " alt="" coords="230,117,256,154,252,157,226,121"/>
+<area shape="poly" id="edge9_Node000008_Node000002" title=" " alt="" coords="258,194,212,233,209,229,255,190"/>
+</map>

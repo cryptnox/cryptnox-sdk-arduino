@@ -1,0 +1,37 @@
+<map id="src/ArduinoCryptoProvider.cpp" name="src/ArduinoCryptoProvider.cpp">
+<area shape="rect" id="Node000001" title="Implementation of the Arduino UNO R4 concrete crypto provider." alt="" coords="349,5,567,31"/>
+<area shape="rect" id="Node000002" href="$ArduinoCryptoProvider_8h.html" title="Concrete CW_CryptoProvider for the Arduino UNO R4 (RA4M1)." alt="" coords="127,79,307,104"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="420,33,270,77,268,72,418,28"/>
+<area shape="rect" id="Node000014" title=" " alt="" coords="331,79,391,104"/>
+<area shape="poly" id="edge15_Node000001_Node000014" title=" " alt="" coords="444,33,389,72,386,68,441,29"/>
+<area shape="rect" id="Node000015" title=" " alt="" coords="415,79,501,104"/>
+<area shape="poly" id="edge16_Node000001_Node000015" title=" " alt="" coords="461,31,461,65,455,65,455,31"/>
+<area shape="rect" id="Node000016" title=" " alt="" coords="525,79,610,104"/>
+<area shape="poly" id="edge17_Node000001_Node000016" title=" " alt="" coords="477,28,539,69,536,73,474,33"/>
+<area shape="rect" id="Node000017" title=" " alt="" coords="634,79,693,104"/>
+<area shape="poly" id="edge18_Node000001_Node000017" title=" " alt="" coords="492,28,622,73,620,78,490,33"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="5,159,89,185"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="193,106,85,156,83,151,191,102"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="113,159,181,185"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="208,106,169,151,165,147,204,102"/>
+<area shape="rect" id="Node000005" href="$CW__CryptoProvider_8h.html" title="Abstract cryptographic primitives interface." alt="" coords="205,152,367,192"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="229,102,262,140,258,144,225,106"/>
+<area shape="rect" id="Node000013" title=" " alt="" coords="391,159,469,185"/>
+<area shape="poly" id="edge14_Node000002_Node000013" title=" " alt="" coords="249,102,387,152,385,157,247,107"/>
+<area shape="rect" id="Node000006" href="$platform__compat_8h.html" title="Arduino compatibility shims for non&#45;Arduino (plain C++) builds." alt="" coords="221,387,367,412"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="282,193,271,240,270,277,274,313,288,373,283,374,269,314,265,277,266,240,277,192"/>
+<area shape="rect" id="Node000011" href="$CW__Defs_8h.html" title="Shared constants, error codes, and session state for the SDK." alt="" coords="281,240,374,265"/>
+<area shape="poly" id="edge10_Node000005_Node000011" title=" " alt="" coords="298,191,317,226,312,229,294,193"/>
+<area shape="rect" id="Node000007" title=" " alt="" coords="113,460,184,485"/>
+<area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="272,414,186,456,183,452,269,410"/>
+<area shape="rect" id="Node000008" title=" " alt="" coords="209,460,283,485"/>
+<area shape="poly" id="edge7_Node000006_Node000008" title=" " alt="" coords="288,414,264,450,259,447,284,411"/>
+<area shape="rect" id="Node000009" title=" " alt="" coords="308,460,379,485"/>
+<area shape="poly" id="edge8_Node000006_Node000009" title=" " alt="" coords="304,411,330,447,325,450,300,414"/>
+<area shape="rect" id="Node000010" title=" " alt="" coords="403,460,486,485"/>
+<area shape="poly" id="edge9_Node000006_Node000010" title=" " alt="" coords="319,410,409,452,406,456,317,414"/>
+<area shape="poly" id="edge11_Node000011_Node000006" title=" " alt="" coords="327,266,302,374,297,373,322,265"/>
+<area shape="rect" id="Node000012" href="$CW__Utils_8h.html" title="Platform&#45;independent security and memory utilities." alt="" coords="331,313,425,339"/>
+<area shape="poly" id="edge12_Node000011_Node000012" title=" " alt="" coords="338,264,364,301,360,304,334,267"/>
+<area shape="poly" id="edge13_Node000012_Node000006" title=" " alt="" coords="366,341,320,380,317,375,363,337"/>
+</map>

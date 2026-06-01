@@ -1,0 +1,7 @@
+<map id="src/ArduinoLoggerAdapter.h" name="src/ArduinoLoggerAdapter.h">
+<area shape="rect" id="Node000001" title="Concrete CW_Logger over HardwareSerial for development builds." alt="" coords="118,5,319,31"/>
+<area shape="rect" id="Node000002" href="$ArduinoLoggerAdapter_8cpp.html" title="Implementation of the HardwareSerial&#45;backed logger." alt="" coords="5,79,221,104"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="192,41,132,81,129,76,189,36"/>
+<area shape="rect" id="Node000003" href="$CryptnoxWallet_8h.html" title="Umbrella include and module&#45;group anchor for the CryptnoxWallet Arduino library." alt="" coords="245,79,403,104"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="249,36,308,76,305,81,246,41"/>
+</map>

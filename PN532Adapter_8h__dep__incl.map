@@ -1,0 +1,7 @@
+<map id="src/PN532Adapter.h" name="src/PN532Adapter.h">
+<area shape="rect" id="Node000001" title="Concrete CW_NfcTransport over Adafruit_PN532 (SPI / I2C / UART)." alt="" coords="101,5,251,31"/>
+<area shape="rect" id="Node000002" href="$CryptnoxWallet_8h.html" title="Umbrella include and module&#45;group anchor for the CryptnoxWallet Arduino library." alt="" coords="5,79,163,104"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="152,41,101,81,97,76,149,37"/>
+<area shape="rect" id="Node000003" href="$PN532Adapter_8cpp.html" title="Implementation of the PN532 transport adapter." alt="" coords="187,79,351,104"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="203,37,256,76,252,81,200,41"/>
+</map>

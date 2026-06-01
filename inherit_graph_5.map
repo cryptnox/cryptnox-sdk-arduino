@@ -1,0 +1,7 @@
+<map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
+<area shape="rect" id="Node000000" href="$classCW__NfcTransport.html" title="Abstract interface for NFC transport operations." alt="" coords="5,31,139,56"/>
+<area shape="rect" id="Node000001" href="$classPN532Adapter.html" title="CW_NfcTransport implementation over the Adafruit_PN532 driver." alt="" coords="187,5,301,31"/>
+<area shape="poly" id="edge6_Node000000_Node000001" title=" " alt="" coords="152,29,186,24,187,29,153,34"/>
+<area shape="rect" id="Node000002" href="$classStubNfc.html" title=" " alt="" coords="207,55,281,80"/>
+<area shape="poly" id="edge7_Node000000_Node000002" title=" " alt="" coords="152,52,208,60,207,65,152,57"/>
+</map>

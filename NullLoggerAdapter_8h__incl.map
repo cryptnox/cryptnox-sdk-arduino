@@ -1,0 +1,17 @@
+<map id="src/NullLoggerAdapter.h" name="src/NullLoggerAdapter.h">
+<area shape="rect" id="Node000001" title="Silent CW_Logger for production firmware." alt="" coords="32,5,209,31"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="5,86,89,111"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="112,33,70,77,66,74,108,29"/>
+<area shape="rect" id="Node000003" href="$CW__Logger_8h.html" title="Abstract logging interface." alt="" coords="113,79,275,119"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="133,29,169,67,165,70,130,33"/>
+<area shape="rect" id="Node000004" href="$platform__compat_8h.html" title="Arduino compatibility shims for non&#45;Arduino (plain C++) builds." alt="" coords="121,167,267,192"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="197,119,197,153,191,153,191,119"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="13,240,84,265"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="172,194,86,236,83,232,169,190"/>
+<area shape="rect" id="Node000006" title=" " alt="" coords="109,240,183,265"/>
+<area shape="poly" id="edge5_Node000004_Node000006" title=" " alt="" coords="188,194,164,230,159,227,184,191"/>
+<area shape="rect" id="Node000007" title=" " alt="" coords="208,240,279,265"/>
+<area shape="poly" id="edge6_Node000004_Node000007" title=" " alt="" coords="204,191,230,227,225,230,200,194"/>
+<area shape="rect" id="Node000008" title=" " alt="" coords="303,240,386,265"/>
+<area shape="poly" id="edge7_Node000004_Node000008" title=" " alt="" coords="219,190,309,232,306,236,217,194"/>
+</map>

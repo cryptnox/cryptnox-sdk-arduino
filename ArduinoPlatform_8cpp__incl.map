@@ -1,0 +1,19 @@
+<map id="src/ArduinoPlatform.cpp" name="src/ArduinoPlatform.cpp">
+<area shape="rect" id="Node000001" title="Implementation of the Arduino blocking&#45;delay platform adapter." alt="" coords="31,5,210,31"/>
+<area shape="rect" id="Node000002" href="$ArduinoPlatform_8h.html" title="Concrete CW_Platform over Arduino&#39;s delay()." alt="" coords="51,79,191,104"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="123,31,123,65,118,65,118,31"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="5,159,89,185"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="112,106,70,151,66,147,108,102"/>
+<area shape="rect" id="Node000004" href="$CW__Platform_8h.html" title="Abstract platform interface for timing primitives." alt="" coords="113,152,275,192"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="133,102,169,140,165,144,130,106"/>
+<area shape="rect" id="Node000005" href="$platform__compat_8h.html" title="Arduino compatibility shims for non&#45;Arduino (plain C++) builds." alt="" coords="121,240,267,265"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="197,192,197,226,191,226,191,192"/>
+<area shape="rect" id="Node000006" title=" " alt="" coords="13,313,84,339"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="172,268,86,310,83,305,169,263"/>
+<area shape="rect" id="Node000007" title=" " alt="" coords="109,313,183,339"/>
+<area shape="poly" id="edge6_Node000005_Node000007" title=" " alt="" coords="188,267,164,304,159,301,184,264"/>
+<area shape="rect" id="Node000008" title=" " alt="" coords="208,313,279,339"/>
+<area shape="poly" id="edge7_Node000005_Node000008" title=" " alt="" coords="204,264,230,301,225,304,200,267"/>
+<area shape="rect" id="Node000009" title=" " alt="" coords="303,313,386,339"/>
+<area shape="poly" id="edge8_Node000005_Node000009" title=" " alt="" coords="219,263,309,305,306,310,217,268"/>
+</map>

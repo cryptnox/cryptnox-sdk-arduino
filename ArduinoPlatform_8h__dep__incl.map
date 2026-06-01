@@ -1,0 +1,7 @@
+<map id="src/ArduinoPlatform.h" name="src/ArduinoPlatform.h">
+<area shape="rect" id="Node000001" title="Concrete CW_Platform over Arduino&#39;s delay()." alt="" coords="109,5,272,31"/>
+<area shape="rect" id="Node000002" href="$ArduinoPlatform_8cpp.html" title="Implementation of the Arduino blocking&#45;delay platform adapter." alt="" coords="5,79,184,104"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="166,41,112,81,109,76,163,37"/>
+<area shape="rect" id="Node000003" href="$CryptnoxWallet_8h.html" title="Umbrella include and module&#45;group anchor for the CryptnoxWallet Arduino library." alt="" coords="208,79,365,104"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="219,37,273,76,269,81,216,41"/>
+</map>

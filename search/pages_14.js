@@ -1,0 +1,26 @@
+var searchData=
+[
+  ['s_20inside_0',['What&apos;s inside',['../dir_f01e8a2f27b004386aaecaee3e9758aa.html#autotoc_md12',1,'']]],
+  ['sdk_20arduino_1',['sdk arduino',['../index.html',1,'cryptnox-sdk-arduino'],['../dir_01d5546719d1d9aa3f28dd8395968769.html#autotoc_md21',1,'cryptnox-sdk-arduino'],['../dir_61c733bd969c2471ac02d97f3b0ee95b.html#autotoc_md31',1,'cryptnox-sdk-arduino'],['../dir_d28a4824dc47e487b107a5db32ef43c4.html#autotoc_md40',1,'cryptnox-sdk-arduino'],['../dir_2365b4822c04e78cb5bc3fb96cb35526.html#autotoc_md47',1,'cryptnox-sdk-arduino'],['../dir_5b19b165ccbe70e79cec239ffc7400ef.html#autotoc_md59',1,'cryptnox-sdk-arduino'],['../dir_cc81cf6f1c823b08adf4153a5960c30a.html#autotoc_md76',1,'cryptnox-sdk-arduino'],['../index.html#autotoc_md86',1,'cryptnox-sdk-arduino']]],
+  ['sdk_20cpp_2',['cryptnox-sdk-cpp',['../dir_f01e8a2f27b004386aaecaee3e9758aa.html#autotoc_md6',1,'']]],
+  ['secp256k1_20on_20a_2032_20byte_20hash_3',['Sign — ECDSA secp256k1 on a 32-Byte Hash',['../dir_2365b4822c04e78cb5bc3fb96cb35526.html#autotoc_md48',1,'']]],
+  ['secure_20channel_4',['VerifyPin — PIN Verification Over the Secure Channel',['../dir_cc81cf6f1c823b08adf4153a5960c30a.html#autotoc_md77',1,'']]],
+  ['secure_20channel_20card_20info_5',['Connect — Secure Channel + Card Info',['../dir_61c733bd969c2471ac02d97f3b0ee95b.html#autotoc_md32',1,'']]],
+  ['seeds_6',['seeds',['../dir_3d079c6450fb44aa35d349dd7525c626.html#autotoc_md0',1,'Fuzz corpus — DER parser seeds'],['../dir_3d079c6450fb44aa35d349dd7525c626.html#autotoc_md1',1,'Recommended seeds']]],
+  ['selector_200x00_7',['DER ECDSA signatures (&lt;span class=&quot;tt&quot;&gt;selector = 0x00&lt;/span&gt;)',['../dir_3d079c6450fb44aa35d349dd7525c626.html#autotoc_md2',1,'']]],
+  ['selector_200x01_8',['Manufacturer certificate blobs (&lt;span class=&quot;tt&quot;&gt;selector = 0x01&lt;/span&gt;)',['../dir_3d079c6450fb44aa35d349dd7525c626.html#autotoc_md3',1,'']]],
+  ['sepolia_9',['UsdcSigning — Broadcast a Real EIP-1559 USDC Transfer on Sepolia',['../dir_5b19b165ccbe70e79cec239ffc7400ef.html#autotoc_md60',1,'']]],
+  ['setup_10',['Hardware setup',['../index.html#autotoc_md96',1,'']]],
+  ['setup_20bat_11',['Install (Windows — &lt;span class=&quot;tt&quot;&gt;setup.bat&lt;/span&gt;)',['../index.html#autotoc_md95',1,'']]],
+  ['sign_20—_20ecdsa_20secp256k1_20on_20a_2032_20byte_20hash_12',['Sign — ECDSA secp256k1 on a 32-Byte Hash',['../dir_2365b4822c04e78cb5bc3fb96cb35526.html#autotoc_md48',1,'']]],
+  ['sign_20a_2032_20byte_20hash_20—_20sign_20ino_13',['3. Sign a 32-byte hash — &lt;a href=&quot;examples/Sign/Sign.ino&quot;&gt;&lt;span class=&quot;tt&quot;&gt;Sign.ino&lt;/span&gt;&lt;/a&gt;',['../index.html#autotoc_md103',1,'']]],
+  ['sign_20ino_14',['3. Sign a 32-byte hash — &lt;a href=&quot;examples/Sign/Sign.ino&quot;&gt;&lt;span class=&quot;tt&quot;&gt;Sign.ino&lt;/span&gt;&lt;/a&gt;',['../index.html#autotoc_md103',1,'']]],
+  ['signatures_20selector_200x00_15',['DER ECDSA signatures (&lt;span class=&quot;tt&quot;&gt;selector = 0x00&lt;/span&gt;)',['../dir_3d079c6450fb44aa35d349dd7525c626.html#autotoc_md2',1,'']]],
+  ['spi_20interface_16',['Arduino UNO R4 and PN532 NFC — SPI interface',['../index.html#autotoc_md97',1,'']]],
+  ['spi_20or_20i²c_17',['BasicUsage — End-to-End Walkthrough (SPI or I²C)',['../dir_01d5546719d1d9aa3f28dd8395968769.html#autotoc_md22',1,'']]],
+  ['standalone_18',['Building standalone',['../dir_f01e8a2f27b004386aaecaee3e9758aa.html#autotoc_md16',1,'']]],
+  ['start_19',['start',['../dir_01d5546719d1d9aa3f28dd8395968769.html#autotoc_md24',1,'Quick start'],['../dir_61c733bd969c2471ac02d97f3b0ee95b.html#autotoc_md34',1,'Quick start'],['../dir_2365b4822c04e78cb5bc3fb96cb35526.html#autotoc_md50',1,'Quick start'],['../dir_5b19b165ccbe70e79cec239ffc7400ef.html#autotoc_md62',1,'Quick start'],['../dir_cc81cf6f1c823b08adf4153a5960c30a.html#autotoc_md79',1,'Quick start']]],
+  ['step_20by_20step_20code_20',['Step by step code',['../dir_01d5546719d1d9aa3f28dd8395968769.html#autotoc_md27',1,'Step-by-step code'],['../dir_61c733bd969c2471ac02d97f3b0ee95b.html#autotoc_md37',1,'Step-by-step code'],['../dir_2365b4822c04e78cb5bc3fb96cb35526.html#autotoc_md55',1,'Step-by-step code'],['../dir_cc81cf6f1c823b08adf4153a5960c30a.html#autotoc_md82',1,'Step-by-step code']]],
+  ['step_20code_21',['step code',['../dir_01d5546719d1d9aa3f28dd8395968769.html#autotoc_md27',1,'Step-by-step code'],['../dir_61c733bd969c2471ac02d97f3b0ee95b.html#autotoc_md37',1,'Step-by-step code'],['../dir_2365b4822c04e78cb5bc3fb96cb35526.html#autotoc_md55',1,'Step-by-step code'],['../dir_cc81cf6f1c823b08adf4153a5960c30a.html#autotoc_md82',1,'Step-by-step code']]],
+  ['supported_20hardware_22',['Supported hardware',['../index.html#autotoc_md88',1,'']]]
+];

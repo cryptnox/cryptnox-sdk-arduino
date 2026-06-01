@@ -1,0 +1,5 @@
+<map id="ArduinoLoggerAdapter" name="ArduinoLoggerAdapter">
+<area shape="rect" id="Node000001" title="CW_Logger implementation wrapping Arduino&#39;s HardwareSerial." alt="" coords="5,79,172,104"/>
+<area shape="rect" id="Node000002" href="$classCW__Logger.html" title="Abstract interface for serial/debug output." alt="" coords="41,5,136,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="91,44,91,79,86,79,86,44"/>
+</map>

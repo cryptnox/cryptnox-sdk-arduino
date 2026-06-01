@@ -1,0 +1,7 @@
+<map id="src/cryptnox&#45;sdk&#45;cpp/CryptnoxWallet.h" name="src/cryptnox&#45;sdk&#45;cpp/CryptnoxWallet.h">
+<area shape="rect" id="Node000001" title="High&#45;level API for interacting with a Cryptnox Hardware Wallet over NFC." alt="" coords="95,5,254,45"/>
+<area shape="rect" id="Node000002" href="$CryptnoxWallet_8h.html" title="Umbrella include and module&#45;group anchor for the CryptnoxWallet Arduino library." alt="" coords="5,101,163,126"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="147,57,98,102,95,98,143,53"/>
+<area shape="rect" id="Node000003" href="$CryptnoxWallet_8cpp.html" title="Implementation of the high&#45;level CryptnoxWallet API." alt="" coords="187,93,346,133"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="207,53,248,91,244,95,203,57"/>
+</map>

@@ -1,0 +1,29 @@
+<map id="src/PN532Adapter.h" name="src/PN532Adapter.h">
+<area shape="rect" id="Node000001" title="Concrete CW_NfcTransport over Adafruit_PN532 (SPI / I2C / UART)." alt="" coords="211,5,361,31"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="5,86,89,111"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="250,33,102,81,93,84,91,79,100,76,249,28"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="113,86,248,111"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="272,33,209,80,206,76,269,29"/>
+<area shape="rect" id="Node000004" href="$CW__NfcTransport_8h.html" title="Abstract NFC transport interface." alt="" coords="71,167,232,207"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="288,31,282,73,274,97,261,120,238,144,211,162,208,158,235,140,257,117,269,95,277,72,283,31"/>
+<area shape="rect" id="Node000010" href="$CW__Logger_8h.html" title="Abstract logging interface." alt="" coords="256,167,417,207"/>
+<area shape="poly" id="edge10_Node000001_Node000010" title=" " alt="" coords="292,30,307,78,330,153,325,154,302,79,287,31"/>
+<area shape="rect" id="Node000011" href="$CW__Defs_8h.html" title="Shared constants, error codes, and session state for the SDK." alt="" coords="375,79,536,119"/>
+<area shape="poly" id="edge12_Node000001_Node000011" title=" " alt="" coords="312,28,403,70,401,75,310,33"/>
+<area shape="rect" id="Node000005" href="$platform__compat_8h.html" title="Arduino compatibility shims for non&#45;Arduino (plain C++) builds." alt="" coords="267,255,414,280"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="198,204,301,247,299,252,196,209"/>
+<area shape="rect" id="Node000006" title=" " alt="" coords="116,328,187,353"/>
+<area shape="poly" id="edge9_Node000004_Node000006" title=" " alt="" coords="154,207,154,314,149,314,149,207"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="311,283,196,325,194,320,309,278"/>
+<area shape="rect" id="Node000007" title=" " alt="" coords="211,328,286,353"/>
+<area shape="poly" id="edge6_Node000005_Node000007" title=" " alt="" coords="328,282,276,322,273,317,324,278"/>
+<area shape="rect" id="Node000008" title=" " alt="" coords="311,328,381,353"/>
+<area shape="poly" id="edge7_Node000005_Node000008" title=" " alt="" coords="344,280,347,314,341,315,339,281"/>
+<area shape="rect" id="Node000009" title=" " alt="" coords="406,328,489,353"/>
+<area shape="poly" id="edge8_Node000005_Node000009" title=" " alt="" coords="359,278,420,318,417,323,356,282"/>
+<area shape="poly" id="edge11_Node000010_Node000005" title=" " alt="" coords="340,207,342,241,337,241,335,207"/>
+<area shape="poly" id="edge13_Node000011_Node000005" title=" " alt="" coords="457,119,451,162,443,186,431,208,408,232,381,250,378,246,404,228,427,205,438,184,445,161,452,119"/>
+<area shape="rect" id="Node000012" href="$CW__Utils_8h.html" title="Platform&#45;independent security and memory utilities." alt="" coords="493,174,586,199"/>
+<area shape="poly" id="edge14_Node000011_Node000012" title=" " alt="" coords="476,117,520,162,516,166,472,121"/>
+<area shape="poly" id="edge15_Node000012_Node000005" title=" " alt="" coords="511,202,383,252,381,247,509,197"/>
+</map>

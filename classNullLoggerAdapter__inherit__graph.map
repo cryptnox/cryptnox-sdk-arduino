@@ -1,0 +1,5 @@
+<map id="NullLoggerAdapter" name="NullLoggerAdapter">
+<area shape="rect" id="Node000001" title="No&#45;op CW_Logger — guarantees nothing reaches the serial port." alt="" coords="5,79,148,104"/>
+<area shape="rect" id="Node000002" href="$classCW__Logger.html" title="Abstract interface for serial/debug output." alt="" coords="29,5,124,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="79,44,79,79,74,79,74,44"/>
+</map>

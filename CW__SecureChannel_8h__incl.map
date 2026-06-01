@@ -1,0 +1,33 @@
+<map id="src/cryptnox&#45;sdk&#45;cpp/CW_SecureChannel.h" name="src/cryptnox&#45;sdk&#45;cpp/CW_SecureChannel.h">
+<area shape="rect" id="Node000001" title="Cryptnox secure channel protocol over NFC." alt="" coords="216,5,380,45"/>
+<area shape="rect" id="Node000002" href="$platform__compat_8h.html" title="Arduino compatibility shims for non&#45;Arduino (plain C++) builds." alt="" coords="243,313,390,339"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="381,38,468,60,504,74,526,91,555,121,562,132,561,144,525,183,432,267,398,292,362,310,360,306,395,287,428,263,521,179,556,142,557,133,551,125,523,95,501,79,466,65,379,43"/>
+<area shape="rect" id="Node000007" href="$CW__NfcTransport_8h.html" title="Abstract NFC transport interface." alt="" coords="5,240,151,265"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="228,48,181,67,136,95,104,127,86,167,80,197,79,226,73,226,74,197,81,166,100,124,132,91,178,63,226,43"/>
+<area shape="rect" id="Node000008" href="$CW__Logger_8h.html" title="Abstract logging interface." alt="" coords="95,167,202,192"/>
+<area shape="poly" id="edge9_Node000001_Node000008" title=" " alt="" coords="217,46,179,66,163,79,150,95,144,108,141,123,144,153,139,153,136,123,139,107,145,92,159,75,176,61,215,42"/>
+<area shape="rect" id="Node000009" href="$CW__CryptoProvider_8h.html" title="Abstract cryptographic primitives interface." alt="" coords="160,93,319,119"/>
+<area shape="poly" id="edge11_Node000001_Node000009" title=" " alt="" coords="286,47,259,84,254,80,282,44"/>
+<area shape="rect" id="Node000010" href="$CW__Defs_8h.html" title="Shared constants, error codes, and session state for the SDK." alt="" coords="294,167,387,192"/>
+<area shape="poly" id="edge19_Node000001_Node000010" title=" " alt="" coords="312,45,333,93,342,152,337,153,327,94,307,47"/>
+<area shape="rect" id="Node000012" href="$CW__Platform_8h.html" title="Abstract platform interface for timing primitives." alt="" coords="395,93,513,119"/>
+<area shape="poly" id="edge17_Node000001_Node000012" title=" " alt="" coords="337,43,420,85,418,89,334,48"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="79,387,149,412"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="285,341,160,385,159,380,283,336"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="382,387,457,412"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="335,336,393,376,390,381,332,341"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="180,387,251,412"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="302,341,245,381,242,376,299,336"/>
+<area shape="rect" id="Node000006" title=" " alt="" coords="275,387,358,412"/>
+<area shape="poly" id="edge5_Node000002_Node000006" title=" " alt="" coords="319,339,319,373,314,373,314,339"/>
+<area shape="poly" id="edge7_Node000007_Node000002" title=" " alt="" coords="117,263,266,307,264,312,116,268"/>
+<area shape="poly" id="edge8_Node000007_Node000003" title=" " alt="" coords="84,265,110,373,105,374,78,266"/>
+<area shape="poly" id="edge10_Node000008_Node000002" title=" " alt="" coords="159,190,185,225,222,263,253,286,284,305,281,309,250,290,219,267,181,228,154,194"/>
+<area shape="poly" id="edge12_Node000009_Node000002" title=" " alt="" coords="242,119,245,183,253,224,267,264,280,284,295,302,291,305,275,287,262,266,248,225,240,183,236,119"/>
+<area shape="poly" id="edge13_Node000009_Node000010" title=" " alt="" coords="257,116,314,156,311,161,254,121"/>
+<area shape="poly" id="edge14_Node000010_Node000002" title=" " alt="" coords="355,190,380,224,387,245,384,266,369,289,350,307,346,303,365,286,380,264,382,245,376,226,351,194"/>
+<area shape="rect" id="Node000011" href="$CW__Utils_8h.html" title="Platform&#45;independent security and memory utilities." alt="" coords="277,240,370,265"/>
+<area shape="poly" id="edge15_Node000010_Node000011" title=" " alt="" coords="340,193,332,228,327,226,335,192"/>
+<area shape="poly" id="edge16_Node000011_Node000002" title=" " alt="" coords="325,266,322,300,316,300,320,265"/>
+<area shape="poly" id="edge18_Node000012_Node000002" title=" " alt="" coords="455,119,443,186,428,228,405,267,382,291,355,309,352,304,378,287,401,264,423,225,437,184,450,118"/>
+</map>

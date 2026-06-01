@@ -1,0 +1,7 @@
+<map id="CW_Platform" name="CW_Platform">
+<area shape="rect" id="Node000001" title="Abstract interface for platform&#45;specific operations used by the SDK." alt="" coords="87,5,193,31"/>
+<area shape="rect" id="Node000002" href="$classArduinoPlatform.html" title="CW_Platform implementation using Arduino&#39;s blocking delay()." alt="" coords="5,79,133,104"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="121,43,83,80,79,77,117,39"/>
+<area shape="rect" id="Node000003" href="$classStubPlatform.html" title=" " alt="" coords="157,79,264,104"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="163,39,201,77,197,80,159,43"/>
+</map>
