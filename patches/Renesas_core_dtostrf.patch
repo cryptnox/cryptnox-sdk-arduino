@@ -1,0 +1,37 @@
+# SPDX-License-Identifier: LGPL-3.0-or-later
+# Copyright (c) 2026 Cryptnox SA
+#
+# Renesas core - remove forced _printf_float reference in dtostrf
+#
+# cores/arduino/api/deprecated-avr-comp/avr/dtostrf.c.impl contains:
+#
+#     asm(".global _printf_float");
+#
+# This is a hard linker directive that pulls in newlib-nano's full float
+# printf runtime (_dtoa_r, _strtod_l, _svfwprintf_r, ~10 KB) even when
+# dtostrf() is never called. --gc-sections cannot eliminate it because the
+# directive operates during linking, not section gc.
+#
+# Removing this line lets the linker keep newlib-nano's integer-only printf
+# unless something actually calls dtostrf(). Sketches that genuinely need
+# %f formatting via dtostrf must add -u _printf_float to LDFLAGS themselves.
+#
+# Applies to: AppData\Local\Arduino15\packages\arduino\hardware\renesas_uno\<version>\
+#
+# Sentinel: PATCHED: removed `asm(".global _printf_float")`
+
+--- a/cores/arduino/api/deprecated-avr-comp/avr/dtostrf.c.impl
++++ b/cores/arduino/api/deprecated-avr-comp/avr/dtostrf.c.impl
+@@ -27,7 +27,11 @@
+ #include <stdio.h>
+
+ char *dtostrf (double val, signed char width, unsigned char prec, char *sout) {
+-  asm(".global _printf_float");
++  /* PATCHED: removed `asm(".global _printf_float");` which was forcing the
++   * newlib-nano float printf runtime (~10 KB flash) to be linked even when
++   * dtostrf() is never called. Sketches that actually use dtostrf() must
++   * now pass -u _printf_float at link time, OR avoid %f and use a custom
++   * formatter. The Cryptnox SDK does not use dtostrf(). */
+
+ #pragma GCC diagnostic push
+ #pragma GCC diagnostic ignored "-Wdeprecated-declarations"

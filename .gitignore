@@ -1,0 +1,14 @@
+build/
+sdkconfig
+sdkconfig.old
+.claude/
+.vscode/
+examples/UsdcSigning/config.h
+*.ino.cpp
+
+# Doxygen output (generated; published to gh-pages branch by CI)
+docs/html/
+
+# setup.bat install destination and its rolling backups
+libraries/
+libraries_backup_*/

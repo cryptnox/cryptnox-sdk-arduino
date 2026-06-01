@@ -1,0 +1,90 @@
+name: Static analysis
+permissions:
+  contents: read
+  pull-requests: write
+on:
+  push:
+  pull_request:
+jobs:
+  cppcheck:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository (with submodules)
+        uses: actions/checkout@v4
+        with:
+          submodules: recursive
+
+      - name: Install cppcheck and Python
+        run: sudo apt-get install -y cppcheck python3
+
+      # Download the MISRA addon from the matching cppcheck release tag.
+      - name: Download cppcheck MISRA addon
+        run: |
+          CPPCHECK_VER=$(cppcheck --version | awk '{print $2}')
+          BASE="https://raw.githubusercontent.com/danmar/cppcheck/${CPPCHECK_VER}/addons"
+          curl -fsSL "${BASE}/misra.py"       -o /tmp/misra.py
+          curl -fsSL "${BASE}/cppcheckdata.py" -o /tmp/cppcheckdata.py
+          curl -fsSL "${BASE}/misra_9.py"      -o /tmp/misra_9.py || true
+
+      # cppcheck does not recognise the .ino extension. Copy each sketch to
+      # <name>.ino.cpp so it gets picked up by the C++ scan below.
+      - name: Stage .ino files as .cpp for cppcheck
+        run: |
+          while IFS= read -r -d '' f; do
+            cp "$f" "${f%.ino}.ino.cpp"
+          done < <(find examples -name '*.ino' -print0)
+
+      # Arduino core + vendored libs under libraries/ are NOT installed in CI —
+      # we suppress missingInclude rather than try to ship the full toolchain.
+      - name: cppcheck (Cryptnox SDK + Arduino adapters, C++)
+        run: |
+          cppcheck \
+            --enable=warning,style,performance,portability \
+            --std=c++17 \
+            --language=c++ \
+            --inline-suppr \
+            --error-exitcode=1 \
+            --suppress=missingInclude \
+            --suppress=missingIncludeSystem \
+            --suppress=unusedFunction \
+            -I src \
+            -I src/cryptnox-sdk-cpp \
+            --force \
+            src/ \
+            examples/
+
+      # MISRA C:2012 check via the cppcheck MISRA addon.
+      # misra-config warnings are expected (Arduino headers absent in CI) and
+      # are treated as informational false-negatives, not blocking failures.
+      - name: cppcheck MISRA C:2012 (dump + addon)
+        run: |
+          cppcheck \
+            --std=c++17 \
+            --language=c++ \
+            --inline-suppr \
+            --suppress=missingInclude \
+            --suppress=missingIncludeSystem \
+            --suppress=unusedFunction \
+            -I src \
+            -I src/cryptnox-sdk-cpp \
+            --force \
+            --dump \
+            src/ examples/ 2>/dev/null
+          python3 /tmp/misra.py \
+            $(find . -name '*.dump' | grep -v fuzz) \
+            2>&1 | tee /tmp/misra_results.txt
+          # Fail on Required/Mandatory MISRA violations only.
+          # Excluded from failure gate:
+          #   misra-config  — false-negatives from missing Arduino headers (expected in CI)
+          #   misra-c2012-12.3 — Advisory rule; cppcheck incorrectly flags C++ constructor
+          #                      initializer-list commas as the comma operator (known false positive)
+          if grep -E '\[misra-c2012-' /tmp/misra_results.txt \
+               | grep -v 'misra-config' \
+               | grep -v 'misra-c2012-12\.3'; then
+            echo "MISRA Required/Mandatory violations found — see above." >&2
+            exit 1
+          fi
+
+      - name: Remove staged .ino.cpp files
+        if: always()
+        run: find examples -name '*.ino.cpp' -delete
