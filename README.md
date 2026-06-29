@@ -6,6 +6,8 @@
 
 Arduino library for managing Cryptnox Hardware Wallet
 
+📄 [Download this documentation as PDF](https://docs.cryptnox.com/cryptnox-sdk-arduino/cryptnox-sdk-arduino.pdf)
+
 </div>
 
 <br/>

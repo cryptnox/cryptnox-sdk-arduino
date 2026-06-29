@@ -35,8 +35,8 @@ jobs:
           sudo apt-get install -y graphviz wget
           # Extract in /tmp so the bundled examples/ directory does NOT end
           # up inside the repo and get picked up by INPUT = . recursive.
-          wget -q -O /tmp/doxygen.tar.gz \
-            "https://www.doxygen.nl/files/doxygen-${DOXYGEN_VERSION}.linux.bin.tar.gz"
+          wget -O /tmp/doxygen.tar.gz \
+            "https://github.com/doxygen/doxygen/releases/download/Release_${DOXYGEN_VERSION//./_}/doxygen-${DOXYGEN_VERSION}.linux.bin.tar.gz"
           tar xf /tmp/doxygen.tar.gz -C /tmp
           sudo install "/tmp/doxygen-${DOXYGEN_VERSION}/bin/doxygen" /usr/local/bin/doxygen
           doxygen --version
@@ -44,6 +44,29 @@ jobs:
       # 3. Build Doxygen documentation
       - name: Generate Doxygen docs
         run: doxygen docs/Doxyfile
+
+      # 3b. Copy schematic images into the HTML output. README.md references
+      #     them via raw <img src="hardware/schematics/..."> tags; Doxygen does
+      #     NOT process IMAGE_PATH for raw HTML, so these files are never copied
+      #     and the links 404 on the published site. Mirror the path under
+      #     docs/html so the relative <img> src resolves once deployed.
+      - name: Copy schematic images into HTML output
+        run: |
+          mkdir -p docs/html/hardware/schematics
+          cp hardware/schematics/*.png docs/html/hardware/schematics/
+
+      # 3c. Install LaTeX and build the PDF (Doxygen LaTeX output, pdflatex)
+      - name: Install LaTeX for PDF
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y --no-install-recommends doxygen-latex latexmk tex-gyre
+
+      - name: Build PDF (pdflatex)
+        run: |
+          python3 -m pip install --quiet cairosvg
+          python3 docs/patch_latex.py docs/latex/refman.tex "Cryptnox SDK for Arduino"
+          make -C docs/latex
+          cp docs/latex/refman.pdf docs/html/cryptnox-sdk-arduino.pdf
 
       # 4. Deploy HTML documentation to GitHub Pages
       - name: Deploy to GitHub Pages
