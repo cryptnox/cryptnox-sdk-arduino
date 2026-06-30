@@ -248,17 +248,17 @@ $(function(){initNavTree('UsdcSigning_8ino-example.html','',''); });
 <div class="line">    <span class="keywordflow">if</span> (outputCap &lt; required) {</div>
 <div class="line">        <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
 <div class="line">    }</div>
-<div class="line">    <span class="keywordtype">size_t</span> i = 0U;</div>
+<div class="line">    <span class="keywordtype">size_t</span> <a class="code hl_variable" href="namespacepatch__latex.html#a406632f8d5c34fe10bb14863b5c4365a">i</a> = 0U;</div>
 <div class="line">    <span class="keywordtype">size_t</span> o = 0U;</div>
 <div class="line">    <span class="keywordflow">while</span> (i &lt; inputLen) {</div>
-<div class="line">        uint32_t u0 = <span class="keyword">static_cast&lt;</span>uint32_t<span class="keyword">&gt;</span>(<span class="keyword">static_cast&lt;</span>uint8_t<span class="keyword">&gt;</span>(input[i]));</div>
+<div class="line">        uint32_t u0 = <span class="keyword">static_cast&lt;</span>uint32_t<span class="keyword">&gt;</span>(<span class="keyword">static_cast&lt;</span>uint8_t<span class="keyword">&gt;</span>(input[<a class="code hl_variable" href="namespacepatch__latex.html#a406632f8d5c34fe10bb14863b5c4365a">i</a>]));</div>
 <div class="line">        uint32_t u1 = 0U;</div>
 <div class="line">        uint32_t u2 = 0U;</div>
 <div class="line">        <span class="keywordflow">if</span> ((i + 1U) &lt; inputLen) {</div>
-<div class="line">            u1 = <span class="keyword">static_cast&lt;</span>uint32_t<span class="keyword">&gt;</span>(<span class="keyword">static_cast&lt;</span>uint8_t<span class="keyword">&gt;</span>(input[i + 1U]));</div>
+<div class="line">            u1 = <span class="keyword">static_cast&lt;</span>uint32_t<span class="keyword">&gt;</span>(<span class="keyword">static_cast&lt;</span>uint8_t<span class="keyword">&gt;</span>(input[<a class="code hl_variable" href="namespacepatch__latex.html#a406632f8d5c34fe10bb14863b5c4365a">i</a> + 1U]));</div>
 <div class="line">        }</div>
 <div class="line">        <span class="keywordflow">if</span> ((i + 2U) &lt; inputLen) {</div>
-<div class="line">            u2 = <span class="keyword">static_cast&lt;</span>uint32_t<span class="keyword">&gt;</span>(<span class="keyword">static_cast&lt;</span>uint8_t<span class="keyword">&gt;</span>(input[i + 2U]));</div>
+<div class="line">            u2 = <span class="keyword">static_cast&lt;</span>uint32_t<span class="keyword">&gt;</span>(<span class="keyword">static_cast&lt;</span>uint8_t<span class="keyword">&gt;</span>(input[<a class="code hl_variable" href="namespacepatch__latex.html#a406632f8d5c34fe10bb14863b5c4365a">i</a> + 2U]));</div>
 <div class="line">        }</div>
 <div class="line">        output[o] = kAlphabet[<span class="keyword">static_cast&lt;</span>uint8_t<span class="keyword">&gt;</span>(u0 &gt;&gt; 2U)];</div>
 <div class="line">        o++;</div>
@@ -276,7 +276,7 @@ $(function(){initNavTree('UsdcSigning_8ino-example.html','',''); });
 <div class="line">            output[o] = <span class="charliteral">&#39;=&#39;</span>;</div>
 <div class="line">        }</div>
 <div class="line">        o++;</div>
-<div class="line">        i += 3U;</div>
+<div class="line">        <a class="code hl_variable" href="namespacepatch__latex.html#a406632f8d5c34fe10bb14863b5c4365a">i</a> += 3U;</div>
 <div class="line">    }</div>
 <div class="line">    output[o] = <span class="charliteral">&#39;\0&#39;</span>;</div>
 <div class="line">    <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
@@ -480,9 +480,9 @@ $(function(){initNavTree('UsdcSigning_8ino-example.html','',''); });
 <div class="line"><span class="comment">         * directly to the HTTP client, avoiding a large intermediate buffer. */</span></div>
 <div class="line">        <span class="keywordtype">char</span> byteHexStr[<a id="_a55" name="_a55"></a><a class="code hl_define" href="UsdcSigning_8ino.html#a49f82d1187d6071cd6660c3e86fb3dd5">HEX_CHAR_BUF_SIZE</a>];</div>
 <div class="line">        byteHexStr[2] = <span class="charliteral">&#39;\0&#39;</span>;</div>
-<div class="line">        <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> i = 0; i &lt; len; i++) {</div>
-<div class="line">            byteHexStr[0] = <a class="code hl_variable" href="UsdcSigning_8ino.html#a0a60680c4bd96cb81b2121ad28ea2123">hexChars</a>[raw[i] &gt;&gt; 4];   <span class="comment">/* high nibble */</span></div>
-<div class="line">            byteHexStr[1] = <a class="code hl_variable" href="UsdcSigning_8ino.html#a0a60680c4bd96cb81b2121ad28ea2123">hexChars</a>[raw[i] &amp; 0x0f]; <span class="comment">/* low nibble  */</span></div>
+<div class="line">        <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> i = 0; <a class="code hl_variable" href="namespacepatch__latex.html#a406632f8d5c34fe10bb14863b5c4365a">i</a> &lt; len; <a class="code hl_variable" href="namespacepatch__latex.html#a406632f8d5c34fe10bb14863b5c4365a">i</a>++) {</div>
+<div class="line">            byteHexStr[0] = <a class="code hl_variable" href="UsdcSigning_8ino.html#a0a60680c4bd96cb81b2121ad28ea2123">hexChars</a>[raw[<a class="code hl_variable" href="namespacepatch__latex.html#a406632f8d5c34fe10bb14863b5c4365a">i</a>] &gt;&gt; 4];   <span class="comment">/* high nibble */</span></div>
+<div class="line">            byteHexStr[1] = <a class="code hl_variable" href="UsdcSigning_8ino.html#a0a60680c4bd96cb81b2121ad28ea2123">hexChars</a>[raw[<a class="code hl_variable" href="namespacepatch__latex.html#a406632f8d5c34fe10bb14863b5c4365a">i</a>] &amp; 0x0f]; <span class="comment">/* low nibble  */</span></div>
 <div class="line">            client.print(byteHexStr);</div>
 <div class="line">        }</div>
 <div class="line">        client.print(requestSuffix);</div>
@@ -527,23 +527,23 @@ $(function(){initNavTree('UsdcSigning_8ino-example.html','',''); });
 <div class="line">    uint16_t pos = 0U;</div>
 <div class="line">    hexBuf[pos++] = <span class="charliteral">&#39;0&#39;</span>;</div>
 <div class="line">    hexBuf[pos++] = <span class="charliteral">&#39;x&#39;</span>;</div>
-<div class="line">    <span class="keywordflow">for</span> (uint8_t i = 0U; i &lt; 32U; i++) {</div>
-<div class="line">        hexBuf[pos++] = <a class="code hl_variable" href="UsdcSigning_8ino.html#a0a60680c4bd96cb81b2121ad28ea2123">hexChars</a>[hash[i] &gt;&gt; 4];</div>
-<div class="line">        hexBuf[pos++] = <a class="code hl_variable" href="UsdcSigning_8ino.html#a0a60680c4bd96cb81b2121ad28ea2123">hexChars</a>[hash[i] &amp; 0x0f];</div>
+<div class="line">    <span class="keywordflow">for</span> (uint8_t i = 0U; <a class="code hl_variable" href="namespacepatch__latex.html#a406632f8d5c34fe10bb14863b5c4365a">i</a> &lt; 32U; <a class="code hl_variable" href="namespacepatch__latex.html#a406632f8d5c34fe10bb14863b5c4365a">i</a>++) {</div>
+<div class="line">        hexBuf[pos++] = <a class="code hl_variable" href="UsdcSigning_8ino.html#a0a60680c4bd96cb81b2121ad28ea2123">hexChars</a>[hash[<a class="code hl_variable" href="namespacepatch__latex.html#a406632f8d5c34fe10bb14863b5c4365a">i</a>] &gt;&gt; 4];</div>
+<div class="line">        hexBuf[pos++] = <a class="code hl_variable" href="UsdcSigning_8ino.html#a0a60680c4bd96cb81b2121ad28ea2123">hexChars</a>[hash[<a class="code hl_variable" href="namespacepatch__latex.html#a406632f8d5c34fe10bb14863b5c4365a">i</a>] &amp; 0x0f];</div>
 <div class="line">    }</div>
 <div class="line">    <span class="comment">/* v field: ECRECOVER_V_PAD_CHARS zero chars, then 1 value byte — filled per iteration */</span></div>
 <div class="line">    <span class="keyword">const</span> uint16_t vOffset = pos;</div>
-<div class="line">    <span class="keywordflow">for</span> (uint8_t i = 0U; i &lt; <a id="_a58" name="_a58"></a><a class="code hl_define" href="UsdcSigning_8ino.html#a08af8213dd4e1d9a0ebe8209b2ab8047">ECRECOVER_V_PAD_CHARS</a>; i++) {</div>
+<div class="line">    <span class="keywordflow">for</span> (uint8_t i = 0U; <a class="code hl_variable" href="namespacepatch__latex.html#a406632f8d5c34fe10bb14863b5c4365a">i</a> &lt; <a id="_a58" name="_a58"></a><a class="code hl_define" href="UsdcSigning_8ino.html#a08af8213dd4e1d9a0ebe8209b2ab8047">ECRECOVER_V_PAD_CHARS</a>; <a class="code hl_variable" href="namespacepatch__latex.html#a406632f8d5c34fe10bb14863b5c4365a">i</a>++) {</div>
 <div class="line">        hexBuf[pos++] = <span class="charliteral">&#39;0&#39;</span>;</div>
 <div class="line">    }</div>
 <div class="line">    pos += 2U; <span class="comment">/* placeholder for v byte */</span></div>
-<div class="line">    <span class="keywordflow">for</span> (uint8_t i = 0U; i &lt; 32U; i++) {</div>
-<div class="line">        hexBuf[pos++] = <a class="code hl_variable" href="UsdcSigning_8ino.html#a0a60680c4bd96cb81b2121ad28ea2123">hexChars</a>[r[i] &gt;&gt; 4];</div>
-<div class="line">        hexBuf[pos++] = <a class="code hl_variable" href="UsdcSigning_8ino.html#a0a60680c4bd96cb81b2121ad28ea2123">hexChars</a>[r[i] &amp; 0x0f];</div>
+<div class="line">    <span class="keywordflow">for</span> (uint8_t i = 0U; <a class="code hl_variable" href="namespacepatch__latex.html#a406632f8d5c34fe10bb14863b5c4365a">i</a> &lt; 32U; <a class="code hl_variable" href="namespacepatch__latex.html#a406632f8d5c34fe10bb14863b5c4365a">i</a>++) {</div>
+<div class="line">        hexBuf[pos++] = <a class="code hl_variable" href="UsdcSigning_8ino.html#a0a60680c4bd96cb81b2121ad28ea2123">hexChars</a>[r[<a class="code hl_variable" href="namespacepatch__latex.html#a406632f8d5c34fe10bb14863b5c4365a">i</a>] &gt;&gt; 4];</div>
+<div class="line">        hexBuf[pos++] = <a class="code hl_variable" href="UsdcSigning_8ino.html#a0a60680c4bd96cb81b2121ad28ea2123">hexChars</a>[r[<a class="code hl_variable" href="namespacepatch__latex.html#a406632f8d5c34fe10bb14863b5c4365a">i</a>] &amp; 0x0f];</div>
 <div class="line">    }</div>
-<div class="line">    <span class="keywordflow">for</span> (uint8_t i = 0U; i &lt; 32U; i++) {</div>
-<div class="line">        hexBuf[pos++] = <a class="code hl_variable" href="UsdcSigning_8ino.html#a0a60680c4bd96cb81b2121ad28ea2123">hexChars</a>[s[i] &gt;&gt; 4];</div>
-<div class="line">        hexBuf[pos++] = <a class="code hl_variable" href="UsdcSigning_8ino.html#a0a60680c4bd96cb81b2121ad28ea2123">hexChars</a>[s[i] &amp; 0x0f];</div>
+<div class="line">    <span class="keywordflow">for</span> (uint8_t i = 0U; <a class="code hl_variable" href="namespacepatch__latex.html#a406632f8d5c34fe10bb14863b5c4365a">i</a> &lt; 32U; <a class="code hl_variable" href="namespacepatch__latex.html#a406632f8d5c34fe10bb14863b5c4365a">i</a>++) {</div>
+<div class="line">        hexBuf[pos++] = <a class="code hl_variable" href="UsdcSigning_8ino.html#a0a60680c4bd96cb81b2121ad28ea2123">hexChars</a>[<a class="code hl_variable" href="namespacepatch__latex.html#ac6165abccaddb6e5ab98b0966c1a1c60">s</a>[<a class="code hl_variable" href="namespacepatch__latex.html#a406632f8d5c34fe10bb14863b5c4365a">i</a>] &gt;&gt; 4];</div>
+<div class="line">        hexBuf[pos++] = <a class="code hl_variable" href="UsdcSigning_8ino.html#a0a60680c4bd96cb81b2121ad28ea2123">hexChars</a>[<a class="code hl_variable" href="namespacepatch__latex.html#ac6165abccaddb6e5ab98b0966c1a1c60">s</a>[<a class="code hl_variable" href="namespacepatch__latex.html#a406632f8d5c34fe10bb14863b5c4365a">i</a>] &amp; 0x0f];</div>
 <div class="line">    }</div>
 <div class="line">    hexBuf[pos] = <span class="charliteral">&#39;\0&#39;</span>; <span class="comment">/* pos == 258 */</span></div>
 <div class="line"> </div>
@@ -695,8 +695,8 @@ $(function(){initNavTree('UsdcSigning_8ino-example.html','',''); });
 <div class="line"><span class="comment">                 * overflow the uint64 and wrap to a small (replayed) nonce. */</span></div>
 <div class="line">                <span class="keywordtype">int</span> digitCount = 0;</div>
 <div class="line">                <span class="keywordtype">bool</span> overflowed = <span class="keyword">false</span>;</div>
-<div class="line">                <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = xi + 2; i &lt; (int)resp.length(); i++) {</div>
-<div class="line">                    <span class="keywordtype">char</span> c = resp[i];</div>
+<div class="line">                <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = xi + 2; <a class="code hl_variable" href="namespacepatch__latex.html#a406632f8d5c34fe10bb14863b5c4365a">i</a> &lt; (int)resp.length(); <a class="code hl_variable" href="namespacepatch__latex.html#a406632f8d5c34fe10bb14863b5c4365a">i</a>++) {</div>
+<div class="line">                    <span class="keywordtype">char</span> c = resp[<a class="code hl_variable" href="namespacepatch__latex.html#a406632f8d5c34fe10bb14863b5c4365a">i</a>];</div>
 <div class="line">                    <span class="keywordflow">if</span> (!((c&gt;=<span class="charliteral">&#39;0&#39;</span>&amp;&amp;c&lt;=<span class="charliteral">&#39;9&#39;</span>)||(c&gt;=<span class="charliteral">&#39;a&#39;</span>&amp;&amp;c&lt;=<span class="charliteral">&#39;f&#39;</span>)||(c&gt;=<span class="charliteral">&#39;A&#39;</span>&amp;&amp;c&lt;=<span class="charliteral">&#39;F&#39;</span>))) <span class="keywordflow">break</span>;</div>
 <div class="line">                    <span class="keywordflow">if</span> (digitCount &gt;= 16) { overflowed = <span class="keyword">true</span>; <span class="keywordflow">break</span>; }</div>
 <div class="line">                    parsed = (parsed &lt;&lt; 4) | <a id="a63" name="a63"></a><a class="code hl_function" href="util_8cpp.html#a99c10cbb109c930f872aed570bcede25">fromHex</a>(c);</div>
@@ -849,7 +849,7 @@ $(function(){initNavTree('UsdcSigning_8ino-example.html','',''); });
 <div class="line">    Serial.println(<a class="code hl_define" href="platform__compat_8h.html#a2520eacecda4bdd7dafaf12b911626d6">F</a>(<span class="stringliteral">&quot;Signed.&quot;</span>));</div>
 <div class="line"> </div>
 <div class="line">    <span class="keyword">const</span> uint8_t* r = signResult.<a id="a85" name="a85"></a><a class="code hl_variable" href="structCW__SignResult.html#aefde572eb2e1e8778f602f46858c090f">signature</a>;       <span class="comment">/* first 32 bytes */</span></div>
-<div class="line">    <span class="keyword">const</span> uint8_t* s = signResult.<a class="code hl_variable" href="structCW__SignResult.html#aefde572eb2e1e8778f602f46858c090f">signature</a> + 32;  <span class="comment">/* last  32 bytes */</span></div>
+<div class="line">    <span class="keyword">const</span> uint8_t* <a class="code hl_variable" href="namespacepatch__latex.html#ac6165abccaddb6e5ab98b0966c1a1c60">s</a> = signResult.<a class="code hl_variable" href="structCW__SignResult.html#aefde572eb2e1e8778f602f46858c090f">signature</a> + 32;  <span class="comment">/* last  32 bytes */</span></div>
 <div class="line">    <a class="code hl_function" href="UsdcSigning_8ino.html#a2a0846900b7448c876c47cd8318e9c95">printHex</a>(<span class="stringliteral">&quot;[SIG r]&quot;</span>, r, 32);</div>
 <div class="line">    <a class="code hl_function" href="UsdcSigning_8ino.html#a2a0846900b7448c876c47cd8318e9c95">printHex</a>(<span class="stringliteral">&quot;[SIG s]&quot;</span>, s, 32);</div>
 <div class="line"> </div>
@@ -945,6 +945,8 @@ $(function(){initNavTree('UsdcSigning_8ino-example.html','',''); });
 <div class="ttc" id="aconfig_8template_8h_html_afa34725304f99f47e35051467d6e3409"><div class="ttname"><a href="config_8template_8h.html#afa34725304f99f47e35051467d6e3409">CARD_PIN_LEN</a></div><div class="ttdeci">#define CARD_PIN_LEN</div><div class="ttdef"><b>Definition</b> <a href="config_8template_8h_source.html#l00095">config.template.h:95</a></div></div>
 <div class="ttc" id="akeccak256_8cpp_html_a87cdb4f920d99d36b7020b14cb4b31ce"><div class="ttname"><a href="keccak256_8cpp.html#a87cdb4f920d99d36b7020b14cb4b31ce">keccak256</a></div><div class="ttdeci">void keccak256(const uint8_t *in, size_t inlen, uint8_t out[32])</div><div class="ttdoc">Compute Keccak-256 hash of input data.</div><div class="ttdef"><b>Definition</b> <a href="keccak256_8cpp_source.html#l00111">keccak256.cpp:111</a></div></div>
 <div class="ttc" id="akeccak256_8h_html"><div class="ttname"><a href="keccak256_8h.html">keccak256.h</a></div><div class="ttdoc">Keccak-256 (SHA3 variant) hash function for Ethereum.</div></div>
+<div class="ttc" id="anamespacepatch__latex_html_a406632f8d5c34fe10bb14863b5c4365a"><div class="ttname"><a href="namespacepatch__latex.html#a406632f8d5c34fe10bb14863b5c4365a">patch_latex.i</a></div><div class="ttdeci">i</div><div class="ttdef"><b>Definition</b> <a href="patch__latex_8py_source.html#l00149">patch_latex.py:149</a></div></div>
+<div class="ttc" id="anamespacepatch__latex_html_ac6165abccaddb6e5ab98b0966c1a1c60"><div class="ttname"><a href="namespacepatch__latex.html#ac6165abccaddb6e5ab98b0966c1a1c60">patch_latex.s</a></div><div class="ttdeci">s</div><div class="ttdef"><b>Definition</b> <a href="patch__latex_8py_source.html#l00027">patch_latex.py:27</a></div></div>
 <div class="ttc" id="aplatform__compat_8h_html_a2520eacecda4bdd7dafaf12b911626d6"><div class="ttname"><a href="platform__compat_8h.html#a2520eacecda4bdd7dafaf12b911626d6">F</a></div><div class="ttdeci">#define F(string_literal)</div><div class="ttdef"><b>Definition</b> <a href="platform__compat_8h_source.html#l00042">platform_compat.h:42</a></div></div>
 <div class="ttc" id="aplatform__compat_8h_html_a9075d93e0ab26ccd6e059fa06aa4e3de"><div class="ttname"><a href="platform__compat_8h.html#a9075d93e0ab26ccd6e059fa06aa4e3de">HEX</a></div><div class="ttdeci">#define HEX</div><div class="ttdef"><b>Definition</b> <a href="platform__compat_8h_source.html#l00035">platform_compat.h:35</a></div></div>
 <div class="ttc" id="astructCW__SecureSession_html"><div class="ttname"><a href="structCW__SecureSession.html">CW_SecureSession</a></div><div class="ttdoc">Holds cryptographic session state for reentrant secure channel operations.</div><div class="ttdef"><b>Definition</b> <a href="CW__Defs_8h_source.html#l00168">CW_Defs.h:168</a></div></div>

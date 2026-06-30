@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['getcardcertificate_0',['getCardCertificate',['../classCW__SecureChannel.html#a72983a22674a33744054095eb7e9d3f9',1,'CW_SecureChannel']]],
-  ['getcardinfo_1',['getCardInfo',['../classCryptnoxWallet.html#a8331fe2f662397916749769e17d68ecd',1,'CryptnoxWallet']]],
-  ['getmanufacturercertificate_2',['getManufacturerCertificate',['../classCW__SecureChannel.html#af4e64bd9c3acd51472c5e4cd5fccb1f2',1,'CW_SecureChannel']]]
+  ['fetchnonce_0',['fetchNonce',['../UsdcSigning_8ino.html#ae1867ebddae4037761eb4091873a6031',1,'UsdcSigning.ino']]],
+  ['fill_5fsecure_5frandom_1',['fill_secure_random',['../classCW__Utils.html#ae86b55119f227df98eee22cb2bb1cf79',1,'CW_Utils']]],
+  ['fromhex_2',['fromHex',['../util_8cpp.html#a99c10cbb109c930f872aed570bcede25',1,'fromHex(char c):&#160;util.cpp'],['../util_8h.html#a99c10cbb109c930f872aed570bcede25',1,'fromHex(char c):&#160;util.cpp']]]
 ];

@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['makekey_0',['makeKey',['../classArduinoCryptoProvider.html#a35f8c1997616f9b37eaae1db44c4cfe1',1,'ArduinoCryptoProvider::makeKey()'],['../classCW__CryptoProvider.html#adb0cb9fc0ee8264d09832d8992bae48c',1,'CW_CryptoProvider::makeKey()'],['../classStubCrypto.html#a912885fa0f54067a80ec389561ca2f86',1,'StubCrypto::makeKey()']]],
-  ['mutuallyauthenticate_1',['mutuallyAuthenticate',['../classCW__SecureChannel.html#a2561fd15dadb9c6cef938e344e645c22',1,'CW_SecureChannel']]]
+  ['llvmfuzzertestoneinput_0',['LLVMFuzzerTestOneInput',['../fuzz__der_8cpp.html#a91ce7c16e9840492202299da2b451e60',1,'fuzz_der.cpp']]],
+  ['loop_1',['loop',['../BasicUsage_8ino.html#afe461d27b9c48d5921c00d521181f12f',1,'loop():&#160;BasicUsage.ino'],['../Connect_8ino.html#afe461d27b9c48d5921c00d521181f12f',1,'loop():&#160;Connect.ino'],['../Sign_8ino.html#afe461d27b9c48d5921c00d521181f12f',1,'loop():&#160;Sign.ino'],['../UsdcSigning_8ino.html#afe461d27b9c48d5921c00d521181f12f',1,'loop():&#160;UsdcSigning.ino'],['../VerifyPin_8ino.html#afe461d27b9c48d5921c00d521181f12f',1,'loop():&#160;VerifyPin.ino']]]
 ];

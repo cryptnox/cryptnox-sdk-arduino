@@ -1,16 +1,12 @@
 var searchData=
 [
-  ['safe_5fmemcpy_0',['safe_memcpy',['../classCW__Utils.html#a06e3f240779c58e3cfdd0f1b97dc0ed6',1,'CW_Utils']]],
-  ['secure_5fcompare_1',['secure_compare',['../classCW__Utils.html#a588c6e8f57ce80d05bd8da87241afd26',1,'CW_Utils']]],
-  ['secure_5fwipe_2',['secure_wipe',['../classCW__Utils.html#a62a40b0e4577c7d716caf48016b40cb2',1,'CW_Utils']]],
-  ['selectapdu_3',['selectApdu',['../classCW__SecureChannel.html#a7afa1f7bbd9c0e45069893b00883fd11',1,'CW_SecureChannel']]],
-  ['sendapdu_4',['sendAPDU',['../classCW__NfcTransport.html#af7fb790081cc8742717f6ba3045bc202',1,'CW_NfcTransport::sendAPDU()'],['../classStubNfc.html#a00f8440177ed1e42291554821b89f770',1,'StubNfc::sendAPDU()'],['../classPN532Adapter.html#a501db17b8330054b72a4abce0e6024be',1,'PN532Adapter::sendAPDU()']]],
-  ['sendapdularge_5',['sendAPDULarge',['../classCW__NfcTransport.html#a3fd8677a82ff50b7cbcdc31f4c67eb00',1,'CW_NfcTransport::sendAPDULarge()'],['../classPN532Adapter.html#aee6d8a358ec3cd8aa5939f6912f3c719',1,'PN532Adapter::sendAPDULarge()']]],
-  ['sendrawtx_6',['sendRawTx',['../UsdcSigning_8ino.html#ac3a34c6027764ef531d9e7f145135aa9',1,'UsdcSigning.ino']]],
-  ['sendsignapdu_7',['sendSignApdu',['../classCryptnoxWallet.html#aacd6bbaf21d650b9eb17762d8934cc92',1,'CryptnoxWallet']]],
-  ['setup_8',['setup',['../BasicUsage_8ino.html#a4fc01d736fe50cf5b977f755b675f11d',1,'setup():&#160;BasicUsage.ino'],['../Connect_8ino.html#a4fc01d736fe50cf5b977f755b675f11d',1,'setup():&#160;Connect.ino'],['../Sign_8ino.html#a4fc01d736fe50cf5b977f755b675f11d',1,'setup():&#160;Sign.ino'],['../UsdcSigning_8ino.html#a4fc01d736fe50cf5b977f755b675f11d',1,'setup():&#160;UsdcSigning.ino'],['../VerifyPin_8ino.html#a4fc01d736fe50cf5b977f755b675f11d',1,'setup():&#160;VerifyPin.ino']]],
-  ['sha256_9',['sha256',['../classArduinoCryptoProvider.html#ab94391a261e72d9862d63ed4e2ce85e0',1,'ArduinoCryptoProvider::sha256()'],['../classCW__CryptoProvider.html#ab4a15aeabc457d53b07dcd9a9966bd02',1,'CW_CryptoProvider::sha256()'],['../classStubCrypto.html#af5171ba53b34bab343a24422efb8f6d2',1,'StubCrypto::sha256()']]],
-  ['sha512_10',['sha512',['../classArduinoCryptoProvider.html#a9350468a4f6143ed5953a3ddfc3ecdab',1,'ArduinoCryptoProvider::sha512()'],['../classCW__CryptoProvider.html#a651c5581b03ab0227f591ade247ea753',1,'CW_CryptoProvider::sha512()'],['../classStubCrypto.html#a1604d1403261b47781083e35dd4f539f',1,'StubCrypto::sha512()']]],
-  ['sign_11',['sign',['../classCryptnoxWallet.html#a539f73749cce012f4a973840c76d1275',1,'CryptnoxWallet']]],
-  ['sleep_5fms_12',['sleep_ms',['../classArduinoPlatform.html#ade05cf0d24c3eeaf74318d519dc8f989',1,'ArduinoPlatform::sleep_ms()'],['../classCW__Platform.html#a35c85f735804035836a535c0d2fa8418',1,'CW_Platform::sleep_ms()'],['../classStubPlatform.html#aa83127e8d152bf4e4689e067473f17a6',1,'StubPlatform::sleep_ms()']]]
+  ['random_0',['random',['../classArduinoCryptoProvider.html#af658c3ec4565993ba11c1edd4e203c88',1,'ArduinoCryptoProvider::random()'],['../classCW__CryptoProvider.html#a7977a12d897f47a8d3652c063ae6f056',1,'CW_CryptoProvider::random()'],['../classStubCrypto.html#a4b603f4444a147b27f317af1b27d9d7c',1,'StubCrypto::random()']]],
+  ['resetreader_1',['resetReader',['../classCW__NfcTransport.html#ab44e3a5d098cd178ba4ca7891cac6ad5',1,'CW_NfcTransport::resetReader()'],['../classCW__SecureChannel.html#a8af37c9549a51edffcfb28ef6b15772b',1,'CW_SecureChannel::resetReader()'],['../classStubNfc.html#af8954aa0dca4d4c989c32491506feb6b',1,'StubNfc::resetReader()'],['../classPN532Adapter.html#a0aa02e9f1cb109f9faa7826e11b50b7c',1,'PN532Adapter::resetReader()']]],
+  ['rlpencodeitem_2',['RlpEncodeItem',['../util_8cpp.html#aefcef94d3b35464608f034a9921127f1',1,'RlpEncodeItem(uint8_t *output, size_t output_cap, const uint8_t *input, uint32_t input_len):&#160;util.cpp'],['../util_8h.html#aefcef94d3b35464608f034a9921127f1',1,'RlpEncodeItem(uint8_t *output, size_t output_cap, const uint8_t *input, uint32_t input_len):&#160;util.cpp']]],
+  ['rlpencodesignedtx_3',['rlpEncodeSignedTx',['../UsdcSigning_8ino.html#a04674dcc5d7c2baf81d46c407f52dda4',1,'UsdcSigning.ino']]],
+  ['rlpencodetxbody_4',['rlpEncodeTxBody',['../UsdcSigning_8ino.html#af1cfcf8cc74bd54c260df22c59975fee',1,'UsdcSigning.ino']]],
+  ['rlpencodeunsignedtx_5',['rlpEncodeUnsignedTx',['../UsdcSigning_8ino.html#aa8b4f915eb3cc44018c72ed52bcb7781',1,'UsdcSigning.ino']]],
+  ['rlpencodewholeheader_6',['RlpEncodeWholeHeader',['../util_8cpp.html#a8d0eb3759eab39d3df356dca938207b4',1,'RlpEncodeWholeHeader(uint8_t *header_output, size_t header_cap, uint32_t total_len):&#160;util.cpp'],['../util_8h.html#a8d0eb3759eab39d3df356dca938207b4',1,'RlpEncodeWholeHeader(uint8_t *header_output, size_t header_cap, uint32_t total_len):&#160;util.cpp']]],
+  ['rlpfinalize_7',['rlpFinalize',['../UsdcSigning_8ino.html#a561c037fecf2fd85895fa22accc2533e',1,'UsdcSigning.ino']]],
+  ['rol_8',['rol',['../keccak256_8cpp.html#a07be42edc7166fca7933b23317b6ec20',1,'keccak256.cpp']]]
 ];

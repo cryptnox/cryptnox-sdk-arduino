@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['nfc_0',['nfc',['../BasicUsage_8ino.html#a6124ea981f1b4499c5bb883b376755c3',1,'nfc(serialAdapter, PN532_SS, &amp;SPI):&#160;BasicUsage.ino'],['../Connect_8ino.html#a942381b552fdb88fc588e41210d1edf5',1,'nfc(serialAdapter, PN532_SS_PIN, &amp;SPI):&#160;Connect.ino'],['../Sign_8ino.html#a942381b552fdb88fc588e41210d1edf5',1,'nfc(serialAdapter, PN532_SS_PIN, &amp;SPI):&#160;Sign.ino'],['../UsdcSigning_8ino.html#a942381b552fdb88fc588e41210d1edf5',1,'nfc(serialAdapter, PN532_SS_PIN, &amp;SPI):&#160;UsdcSigning.ino'],['../VerifyPin_8ino.html#a942381b552fdb88fc588e41210d1edf5',1,'nfc(serialAdapter, PN532_SS_PIN, &amp;SPI):&#160;VerifyPin.ino']]],
-  ['nullloggeradapter_1',['NullLoggerAdapter',['../classNullLoggerAdapter.html#a1796cfcae50810f343ba56581fc9dbb1',1,'NullLoggerAdapter::NullLoggerAdapter()=default'],['../classNullLoggerAdapter.html#acae5e24714e4e31b9543002be138ff6d',1,'NullLoggerAdapter::NullLoggerAdapter(const NullLoggerAdapter &amp;)=delete']]]
+  ['makekey_0',['makeKey',['../classArduinoCryptoProvider.html#a35f8c1997616f9b37eaae1db44c4cfe1',1,'ArduinoCryptoProvider::makeKey()'],['../classCW__CryptoProvider.html#adb0cb9fc0ee8264d09832d8992bae48c',1,'CW_CryptoProvider::makeKey()'],['../classStubCrypto.html#a912885fa0f54067a80ec389561ca2f86',1,'StubCrypto::makeKey()']]],
+  ['mutuallyauthenticate_1',['mutuallyAuthenticate',['../classCW__SecureChannel.html#a2561fd15dadb9c6cef938e344e645c22',1,'CW_SecureChannel']]]
 ];

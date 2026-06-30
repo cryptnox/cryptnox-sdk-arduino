@@ -1,4 +1,6 @@
 var searchData=
 [
-  ['hextobytes_0',['hexToBytes',['../util_8cpp.html#ad395094ffcf0a01072f399c2ef558c10',1,'hexToBytes(const char *hex, uint8_t *out, size_t len):&#160;util.cpp'],['../util_8h.html#ad395094ffcf0a01072f399c2ef558c10',1,'hexToBytes(const char *hex, uint8_t *out, size_t len):&#160;util.cpp']]]
+  ['getcardcertificate_0',['getCardCertificate',['../classCW__SecureChannel.html#a72983a22674a33744054095eb7e9d3f9',1,'CW_SecureChannel']]],
+  ['getcardinfo_1',['getCardInfo',['../classCryptnoxWallet.html#a8331fe2f662397916749769e17d68ecd',1,'CryptnoxWallet']]],
+  ['getmanufacturercertificate_2',['getManufacturerCertificate',['../classCW__SecureChannel.html#af4e64bd9c3acd51472c5e4cd5fccb1f2',1,'CW_SecureChannel']]]
 ];

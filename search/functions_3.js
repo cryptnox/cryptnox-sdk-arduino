@@ -1,9 +1,13 @@
 var searchData=
 [
-  ['debugprintsignature_0',['debugPrintSignature',['../classCryptnoxWallet.html#a09ae01d0438dc615ebc0ff23e2fb6b64',1,'CryptnoxWallet']]],
-  ['derreadlength_1',['derReadLength',['../CW__SecureChannel_8cpp.html#acdd54e4da856f1f72ecab50c0dcdd980',1,'CW_SecureChannel.cpp']]],
-  ['derskipfield_2',['derSkipField',['../CW__SecureChannel_8cpp.html#a094702c16ed427969d63c68bf8ece2d1',1,'CW_SecureChannel.cpp']]],
-  ['derwalkmfcert_3',['derWalkMfCert',['../CW__SecureChannel_8cpp.html#a09eb00e9790709b7ca33c49b28be30c7',1,'CW_SecureChannel.cpp']]],
-  ['determineyparity_4',['determineYParity',['../UsdcSigning_8ino.html#ac4f8e3faac76bdb747a29b399bfc0fcd',1,'UsdcSigning.ino']]],
-  ['disconnect_5',['disconnect',['../classCryptnoxWallet.html#a5e52a31fba0f21862e588e1546ad1898',1,'CryptnoxWallet']]]
+  ['checkstatusword_0',['checkStatusWord',['../classCW__SecureChannel.html#a6519c02590facc1346b1a84882ddfd04',1,'CW_SecureChannel']]],
+  ['clear_1',['clear',['../structCW__SecureSession.html#a4cc397558babedde4c0f070fb2763836',1,'CW_SecureSession']]],
+  ['connect_2',['connect',['../classCryptnoxWallet.html#a9231d6ed6a0634a8ab7c2a2710224a49',1,'CryptnoxWallet']]],
+  ['convertnumbertouintarray_3',['ConvertNumberToUintArray',['../util_8cpp.html#af8e6f00818fdfcca7c7c055e9acdfdbd',1,'ConvertNumberToUintArray(uint8_t *str, uint64_t val):&#160;util.cpp'],['../util_8h.html#af8e6f00818fdfcca7c7c055e9acdfdbd',1,'ConvertNumberToUintArray(uint8_t *str, uint64_t val):&#160;util.cpp']]],
+  ['cryptnoxwallet_4',['CryptnoxWallet',['../classCryptnoxWallet.html#a440a5e156f543891a23f2e9668ddad91',1,'CryptnoxWallet::CryptnoxWallet(CW_NfcTransport &amp;driver, CW_Logger &amp;logger, CW_CryptoProvider &amp;crypto, CW_Platform &amp;platform)'],['../classCryptnoxWallet.html#a4cfad878f6d5c649b83d30b5ecf23527',1,'CryptnoxWallet::CryptnoxWallet(const CryptnoxWallet &amp;)=delete']]],
+  ['cw_5fcardinfo_5',['CW_CardInfo',['../structCW__CardInfo.html#ae7bca225f4e7609bf03b369c8442e747',1,'CW_CardInfo']]],
+  ['cw_5fsecurechannel_6',['CW_SecureChannel',['../classCW__SecureChannel.html#a00f625c359bb036485ccdd5728a9b6f6',1,'CW_SecureChannel::CW_SecureChannel(CW_NfcTransport &amp;driver, CW_Logger &amp;logger, CW_CryptoProvider &amp;crypto, CW_Platform &amp;platform)'],['../classCW__SecureChannel.html#a72d545800d6614545f37d80741e14628',1,'CW_SecureChannel::CW_SecureChannel(const CW_SecureChannel &amp;)=delete']]],
+  ['cw_5fsecuresession_7',['CW_SecureSession',['../structCW__SecureSession.html#a7159bf5062a3e31ac518f449738df46a',1,'CW_SecureSession']]],
+  ['cw_5fsignrequest_8',['CW_SignRequest',['../structCW__SignRequest.html#a0baa7734a68ac9eb8c307b683bed15de',1,'CW_SignRequest']]],
+  ['cw_5fsignresult_9',['CW_SignResult',['../structCW__SignResult.html#a28561e0290c5e493651ce16879b5594b',1,'CW_SignResult']]]
 ];

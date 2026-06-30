@@ -1,7 +1,7 @@
 var searchData=
 [
-  ['data_0',['data',['../structTx2.html#ab33ca31f2a3b7a8dd41044e21b8dcec3',1,'Tx2']]],
-  ['datalen_1',['dataLen',['../structTx2.html#a546e4407a291f9ec4c16e92523996787',1,'Tx2']]],
-  ['derivepath_2',['derivePath',['../structCW__SignRequest.html#ab1205bbd93729d6f6a3e3ef4ce1e09cd',1,'CW_SignRequest']]],
-  ['derivepathlength_3',['derivePathLength',['../structCW__SignRequest.html#a6454fa5a9d55d1a2e2450a00425a42ac',1,'CW_SignRequest']]]
+  ['chainid_0',['chainId',['../structTx2.html#a617062eeabb3503572b93e8b8db22386',1,'Tx2']]],
+  ['cryptoprovider_1',['cryptoProvider',['../BasicUsage_8ino.html#ac1cae70e74c494241baa42be9a05b388',1,'cryptoProvider:&#160;BasicUsage.ino'],['../Connect_8ino.html#ac1cae70e74c494241baa42be9a05b388',1,'cryptoProvider:&#160;Connect.ino'],['../Sign_8ino.html#ac1cae70e74c494241baa42be9a05b388',1,'cryptoProvider:&#160;Sign.ino'],['../UsdcSigning_8ino.html#ac1cae70e74c494241baa42be9a05b388',1,'cryptoProvider:&#160;UsdcSigning.ino'],['../VerifyPin_8ino.html#ac1cae70e74c494241baa42be9a05b388',1,'cryptoProvider:&#160;VerifyPin.ino']]],
+  ['cw_5fca_5fdlt_5fpubkey_2',['CW_CA_DLT_PUBKEY',['../CW__TrustedKeys_8h.html#aa6fa4a57da6c5d2b3e32aeece3ad6f54',1,'CW_TrustedKeys.h']]],
+  ['cw_5ftrusted_5fca_5fkeys_3',['CW_TRUSTED_CA_KEYS',['../CW__TrustedKeys_8h.html#a4af434523c372512f1b1da1f33863f4e',1,'CW_TrustedKeys.h']]]
 ];

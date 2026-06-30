@@ -8,6 +8,7 @@ var searchData=
   ['keccakf_5fpiln_5',['keccakf_piln',['../keccak256_8cpp.html#ab902caafb0f2686813243c98e602061f',1,'keccak256.cpp']]],
   ['keccakf_5frndc_6',['keccakf_rndc',['../keccak256_8cpp.html#a629670cac755cc1c32678cd6e9ae88c7',1,'keccak256.cpp']]],
   ['keccakf_5frotc_7',['keccakf_rotc',['../keccak256_8cpp.html#ab7e9f2211ac2f1c219732c60525a0f80',1,'keccak256.cpp']]],
-  ['key_20path_8',['Choosing the key path',['../dir_2365b4822c04e78cb5bc3fb96cb35526.html#autotoc_md53',1,'']]],
-  ['keytype_9',['keyType',['../structCW__SignRequest.html#aa43fe32473403cb51580f80629bcc32a',1,'CW_SignRequest']]]
+  ['keep_8',['keep',['../namespacepatch__latex.html#adfc6fca3daa11fd68e1cfdac53024717',1,'patch_latex']]],
+  ['key_20path_9',['Choosing the key path',['../dir_2365b4822c04e78cb5bc3fb96cb35526.html#autotoc_md53',1,'']]],
+  ['keytype_10',['keyType',['../structCW__SignRequest.html#aa43fe32473403cb51580f80629bcc32a',1,'CW_SignRequest']]]
 ];

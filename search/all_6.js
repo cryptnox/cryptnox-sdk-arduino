@@ -8,11 +8,12 @@ var searchData=
   ['blobs_20selector_200x01_5',['Manufacturer certificate blobs (&lt;span class=&quot;tt&quot;&gt;selector = 0x01&lt;/span&gt;)',['../dir_3d079c6450fb44aa35d349dd7525c626.html#autotoc_md3',1,'']]],
   ['blocked_20pin_6',['Recovering a blocked PIN',['../dir_cc81cf6f1c823b08adf4153a5960c30a.html#autotoc_md83',1,'']]],
   ['board_7',['Host board',['../index.html#autotoc_md91',1,'']]],
-  ['broadcast_20a_20real_20eip_201559_20usdc_20transfer_20on_20sepolia_8',['UsdcSigning — Broadcast a Real EIP-1559 USDC Transfer on Sepolia',['../dir_5b19b165ccbe70e79cec239ffc7400ef.html#autotoc_md60',1,'']]],
-  ['building_20standalone_9',['Building standalone',['../dir_f01e8a2f27b004386aaecaee3e9758aa.html#autotoc_md16',1,'']]],
-  ['buildsignpayload_10',['buildSignPayload',['../classCryptnoxWallet.html#afb4cedb5fd1c5616d8a3be343d97d9ac',1,'CryptnoxWallet']]],
-  ['by_11',['Used by',['../dir_f01e8a2f27b004386aaecaee3e9758aa.html#autotoc_md8',1,'']]],
-  ['by_20step_20code_12',['by step code',['../dir_01d5546719d1d9aa3f28dd8395968769.html#autotoc_md27',1,'Step-by-step code'],['../dir_61c733bd969c2471ac02d97f3b0ee95b.html#autotoc_md37',1,'Step-by-step code'],['../dir_2365b4822c04e78cb5bc3fb96cb35526.html#autotoc_md55',1,'Step-by-step code'],['../dir_cc81cf6f1c823b08adf4153a5960c30a.html#autotoc_md82',1,'Step-by-step code']]],
-  ['byte_20hash_13',['Sign — ECDSA secp256k1 on a 32-Byte Hash',['../dir_2365b4822c04e78cb5bc3fb96cb35526.html#autotoc_md48',1,'']]],
-  ['byte_20hash_20—_20sign_20ino_14',['3. Sign a 32-byte hash — &lt;a href=&quot;examples/Sign/Sign.ino&quot;&gt;&lt;span class=&quot;tt&quot;&gt;Sign.ino&lt;/span&gt;&lt;/a&gt;',['../index.html#autotoc_md103',1,'']]]
+  ['body_8',['body',['../namespacepatch__latex.html#a72adce6788e9ac90f9d3a19bbb8707d7',1,'patch_latex']]],
+  ['broadcast_20a_20real_20eip_201559_20usdc_20transfer_20on_20sepolia_9',['UsdcSigning — Broadcast a Real EIP-1559 USDC Transfer on Sepolia',['../dir_5b19b165ccbe70e79cec239ffc7400ef.html#autotoc_md60',1,'']]],
+  ['building_20standalone_10',['Building standalone',['../dir_f01e8a2f27b004386aaecaee3e9758aa.html#autotoc_md16',1,'']]],
+  ['buildsignpayload_11',['buildSignPayload',['../classCryptnoxWallet.html#afb4cedb5fd1c5616d8a3be343d97d9ac',1,'CryptnoxWallet']]],
+  ['by_12',['Used by',['../dir_f01e8a2f27b004386aaecaee3e9758aa.html#autotoc_md8',1,'']]],
+  ['by_20step_20code_13',['by step code',['../dir_01d5546719d1d9aa3f28dd8395968769.html#autotoc_md27',1,'Step-by-step code'],['../dir_61c733bd969c2471ac02d97f3b0ee95b.html#autotoc_md37',1,'Step-by-step code'],['../dir_2365b4822c04e78cb5bc3fb96cb35526.html#autotoc_md55',1,'Step-by-step code'],['../dir_cc81cf6f1c823b08adf4153a5960c30a.html#autotoc_md82',1,'Step-by-step code']]],
+  ['byte_20hash_14',['Sign — ECDSA secp256k1 on a 32-Byte Hash',['../dir_2365b4822c04e78cb5bc3fb96cb35526.html#autotoc_md48',1,'']]],
+  ['byte_20hash_20—_20sign_20ino_15',['3. Sign a 32-byte hash — &lt;a href=&quot;examples/Sign/Sign.ino&quot;&gt;&lt;span class=&quot;tt&quot;&gt;Sign.ino&lt;/span&gt;&lt;/a&gt;',['../index.html#autotoc_md103',1,'']]]
 ];

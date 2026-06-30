@@ -1,7 +1,7 @@
 var searchData=
 [
-  ['validatesignrequest_0',['validateSignRequest',['../classCryptnoxWallet.html#a9a4781470793bc69b62150894e10d301',1,'CryptnoxWallet']]],
-  ['verifycertificatechain_1',['verifyCertificateChain',['../classCW__SecureChannel.html#a8368b07ac2f5885dbe68a4ac5e2973b9',1,'CW_SecureChannel']]],
-  ['verifyecdsasha256_2',['verifyEcdsaSha256',['../classCW__SecureChannel.html#a4bf5fd741bbbd15e00f37d5362e4e1a5',1,'CW_SecureChannel']]],
-  ['verifypin_3',['verifyPin',['../classCryptnoxWallet.html#acfae75a7be8662c18d2e6af829ef77a0',1,'CryptnoxWallet']]]
+  ['touecccurve_0',['toUEccCurve',['../classArduinoCryptoProvider.html#a4509cda03bac164fe1e5316943ab8045',1,'ArduinoCryptoProvider']]],
+  ['trimleadingzeros_1',['trimLeadingZeros',['../util_8cpp.html#a62518c204ce4fbdcf55bcc94ad0d1eab',1,'trimLeadingZeros(uint8_t *out, size_t out_cap, const uint8_t *in, size_t in_len):&#160;util.cpp'],['../util_8h.html#a62518c204ce4fbdcf55bcc94ad0d1eab',1,'trimLeadingZeros(uint8_t *out, size_t out_cap, const uint8_t *in, size_t in_len):&#160;util.cpp']]],
+  ['trngbyte_2',['trngByte',['../classArduinoCryptoProvider.html#a2a416a805c41f05e3f8d1b94e5b9b454',1,'ArduinoCryptoProvider']]],
+  ['trngcallback_3',['trngCallback',['../classArduinoCryptoProvider.html#ac69dc524cf38db29b76001e3f65bd7e8',1,'ArduinoCryptoProvider']]]
 ];

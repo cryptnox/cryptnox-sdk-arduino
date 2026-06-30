@@ -11,5 +11,6 @@ var searchData=
   ['_5fnfc_8',['_nfc',['../classPN532Adapter.html#ab2eea234b87a66b029b392cfe93e6817',1,'PN532Adapter']]],
   ['_5fplatform_9',['_platform',['../classCryptnoxWallet.html#a055dbbf78dfdf00fa5a4fab36857de6f',1,'CryptnoxWallet::_platform'],['../classCW__SecureChannel.html#a7e1adb1e7b6c67020eca8af092711e44',1,'CW_SecureChannel::_platform']]],
   ['_5fsecure_10',['_secure',['../classCryptnoxWallet.html#a0e62a45d25b98c3b0b48c8060d684908',1,'CryptnoxWallet']]],
-  ['_5fserial_11',['_serial',['../classArduinoLoggerAdapter.html#a427e22e28f41bc12b042902c0fc0e228',1,'ArduinoLoggerAdapter']]]
+  ['_5fserial_11',['_serial',['../classArduinoLoggerAdapter.html#a427e22e28f41bc12b042902c0fc0e228',1,'ArduinoLoggerAdapter']]],
+  ['_5fto_5fascii_12',['_to_ascii',['../namespacepatch__latex.html#a73466ac32da6a13dba8fc6b4a4a85179',1,'patch_latex']]]
 ];

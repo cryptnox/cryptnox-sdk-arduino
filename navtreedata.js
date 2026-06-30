@@ -26,6 +26,14 @@ var NAVTREE =
 [
   [ "cryptnox-sdk-arduino", "index.html", [
     [ "Topics", "topics.html", "topics" ],
+    [ "Namespaces", "namespaces.html", [
+      [ "Namespace List", "namespaces.html", "namespaces_dup" ],
+      [ "Namespace Members", "namespacemembers.html", [
+        [ "All", "namespacemembers.html", null ],
+        [ "Functions", "namespacemembers_func.html", null ],
+        [ "Variables", "namespacemembers_vars.html", null ]
+      ] ]
+    ] ],
     [ "Classes", "annotated.html", [
       [ "Class List", "annotated.html", "annotated_dup" ],
       [ "Class Index", "classes.html", null ],
@@ -55,7 +63,7 @@ var NAVTREEINDEX =
 [
 "ArduinoCryptoProvider_8cpp.html",
 "classArduinoLoggerAdapter.html#aacba526f89317d542823f41b28072a82",
-"globals_defs.html"
+"globals_d.html"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronization';

@@ -11,5 +11,6 @@ var searchData=
   ['wifi_5fssid_8',['WIFI_SSID',['../config_8template_8h.html#a586542b79d00e4db7e1d5a667ae83a2b',1,'config.template.h']]],
   ['windows_20—_20setup_20bat_9',['Install (Windows — &lt;span class=&quot;tt&quot;&gt;setup.bat&lt;/span&gt;)',['../index.html#autotoc_md95',1,'']]],
   ['works_10',['works',['../dir_01d5546719d1d9aa3f28dd8395968769.html#autotoc_md26',1,'How it works'],['../dir_61c733bd969c2471ac02d97f3b0ee95b.html#autotoc_md36',1,'How it works'],['../dir_2365b4822c04e78cb5bc3fb96cb35526.html#autotoc_md52',1,'How it works'],['../dir_5b19b165ccbe70e79cec239ffc7400ef.html#autotoc_md64',1,'How it works'],['../dir_cc81cf6f1c823b08adf4153a5960c30a.html#autotoc_md81',1,'How it works']]],
-  ['writeuserdata_11',['writeUserData',['../classCryptnoxWallet.html#a4ec22fccb95ebf3ad536fa0fb50577d1',1,'CryptnoxWallet']]]
+  ['write_5fto_11',['write_to',['../namespacepatch__latex.html#ad0a110f37f525f8d585a593f824b8d0b',1,'patch_latex']]],
+  ['writeuserdata_12',['writeUserData',['../classCryptnoxWallet.html#a4ec22fccb95ebf3ad536fa0fb50577d1',1,'CryptnoxWallet']]]
 ];
